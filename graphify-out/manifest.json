@@ -1,0 +1,104 @@
+{
+  ".oxlintrc.json": {
+    "mtime": 1790693063.2843988,
+    "seen": 1791034302.994499,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": "029f4905006c1fffd96bc863e2d98d3e"
+  },
+  "package.json": {
+    "mtime": 1791033479.3551598,
+    "seen": 1791034302.9945035,
+    "ast_hash": "a3b4c7c14d2d8122fb6a6985b72c541d",
+    "semantic_hash": "a3b4c7c14d2d8122fb6a6985b72c541d"
+  },
+  "src/App.tsx": {
+    "mtime": 1791031304.1149702,
+    "seen": 1791034302.9945056,
+    "ast_hash": "d7f637d68131509be8d2e73e54b492ee",
+    "semantic_hash": "d7f637d68131509be8d2e73e54b492ee"
+  },
+  "src/components/About.tsx": {
+    "mtime": 1791013468.0665252,
+    "seen": 1791034302.9945068,
+    "ast_hash": "933bf9a8b4e1702e5934da8c29367933",
+    "semantic_hash": "933bf9a8b4e1702e5934da8c29367933"
+  },
+  "src/components/Contact.tsx": {
+    "mtime": 1791013520.142108,
+    "seen": 1791034302.9945078,
+    "ast_hash": "360e814f2f7b3797aed3782b33c52088",
+    "semantic_hash": "360e814f2f7b3797aed3782b33c52088"
+  },
+  "src/components/Footer.tsx": {
+    "mtime": 1791013530.9330237,
+    "seen": 1791034302.994509,
+    "ast_hash": "7575697ec345c964eab985f044196eeb",
+    "semantic_hash": "7575697ec345c964eab985f044196eeb"
+  },
+  "src/components/Hero.tsx": {
+    "mtime": 1791030877.7901387,
+    "seen": 1791034302.9945104,
+    "ast_hash": "2df5987fe21a5def9ff1cce3b4bf1ce2",
+    "semantic_hash": "2df5987fe21a5def9ff1cce3b4bf1ce2"
+  },
+  "src/components/Navigation.tsx": {
+    "mtime": 1791013460.0817678,
+    "seen": 1791034302.9945114,
+    "ast_hash": "d44a591aa8c5a2920866f5814e8c852b",
+    "semantic_hash": "d44a591aa8c5a2920866f5814e8c852b"
+  },
+  "src/components/Services.tsx": {
+    "mtime": 1791013491.2136674,
+    "seen": 1791034302.9945123,
+    "ast_hash": "719b7c4bfd4a1d0bfc473230abb97a0b",
+    "semantic_hash": "719b7c4bfd4a1d0bfc473230abb97a0b"
+  },
+  "src/components/Work.tsx": {
+    "mtime": 1791013479.5929356,
+    "seen": 1791034302.9945135,
+    "ast_hash": "066ca48a9af4549da9509ca3100cfe24",
+    "semantic_hash": "066ca48a9af4549da9509ca3100cfe24"
+  },
+  "src/main.tsx": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945147,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "tsconfig.app.json": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945157,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a"
+  },
+  "tsconfig.json": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945168,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "tsconfig.node.json": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945178,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": "f9cb81ddcea69ffdab672fc8c48dca66"
+  },
+  "vite.config.ts": {
+    "mtime": 1791003849.283698,
+    "seen": 1791034302.9945188,
+    "ast_hash": "4ca1f7ff9ce769b282a665bcaffbd380",
+    "semantic_hash": "4ca1f7ff9ce769b282a665bcaffbd380"
+  },
+  "public/android-hoist.mp4": {
+    "mtime": 1790852956.2418592,
+    "seen": 1791034302.9945197,
+    "ast_hash": "cc7ac2632501063676612a63e79ad324",
+    "semantic_hash": "cc7ac2632501063676612a63e79ad324"
+  },
+  "public/assets/videos/android-hoist.mp4": {
+    "mtime": 1790852956.2418592,
+    "seen": 1791034302.994521,
+    "ast_hash": "cc7ac2632501063676612a63e79ad324",
+    "semantic_hash": "cc7ac2632501063676612a63e79ad324"
+  }
+}

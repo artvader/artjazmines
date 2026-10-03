@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --labels-vibrant-quaternary: #d9d9d9;
+}
+
+[data-theme="dark"] {
+  --labels-vibrant-quaternary: #262626;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #290c01;
+  color: #ffffff;
+  overflow-x: hidden;
+}
