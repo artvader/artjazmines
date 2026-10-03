@@ -1,6 +1,51 @@
 @import "tailwindcss";
 
 :root {
+  --color-neutral-0: #ffffff;
+  --color-neutral-0-rgb: 255 255 255;
+  --color-neutral-100: #d9d9d9;
+  --color-neutral-200: #d8e2ea;
+  --color-neutral-300: #c3b9b9;
+  --color-neutral-300-rgb: 195 185 185;
+  --color-neutral-950-rgb: 0 0 0;
+  --color-ember-950: #290c01;
+  --color-ember-950-rgb: 41 12 1;
+  --color-ember-500-rgb: 214 113 51;
+  --color-amber-300: #ffd166;
+  --color-slate-900: #161e2b;
+  --color-steel-900-rgb: 19 31 48;
+  --color-olive-600: #607a44;
+  --color-olive-600-rgb: 96 122 68;
+  --color-olive-500: #6e8c4e;
+  --color-plum-600: #7a445b;
+  --color-plum-600-rgb: 122 68 91;
+  --color-brass-600: #7a6944;
+  --color-brass-600-rgb: 122 105 68;
+  --color-glow-orange-rgb: 242 127 13;
+
+  --color-bg-page: var(--color-ember-950);
+  --color-bg-page-rgb: var(--color-ember-950-rgb);
+  --color-text-primary: var(--color-neutral-0);
+  --color-text-primary-rgb: var(--color-neutral-0-rgb);
+  --color-text-heading: var(--color-neutral-200);
+  --color-text-accent: var(--color-amber-300);
+  --color-text-inverse: var(--color-slate-900);
+  --color-text-dark-rgb: var(--color-neutral-950-rgb);
+  --color-surface-glass-rgb: var(--color-neutral-0-rgb);
+  --color-surface-muted-rgb: var(--color-neutral-100);
+  --color-surface-card-rgb: var(--color-ember-500-rgb);
+  --color-shadow-rgb: var(--color-neutral-950-rgb);
+  --color-shadow-accent-rgb: var(--color-glow-orange-rgb);
+  --color-service-web: var(--color-neutral-300);
+  --color-service-web-rgb: var(--color-neutral-300-rgb);
+  --color-service-print: var(--color-olive-600);
+  --color-service-print-rgb: var(--color-olive-600-rgb);
+  --color-service-brand: var(--color-plum-600);
+  --color-service-brand-rgb: var(--color-plum-600-rgb);
+  --color-service-prototype: var(--color-brass-600);
+  --color-service-prototype-rgb: var(--color-brass-600-rgb);
+  --color-action-primary: var(--color-olive-600);
+  --color-action-primary-hover: var(--color-olive-500);
   --labels-vibrant-quaternary: #d9d9d9;
 }
 
@@ -11,7 +56,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #290c01;
-  color: #ffffff;
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
   overflow-x: hidden;
 }

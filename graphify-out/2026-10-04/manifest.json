@@ -1,0 +1,290 @@
+{
+  ".oxlintrc.json": {
+    "mtime": 1790693063.2843988,
+    "seen": 1791034302.994499,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": "029f4905006c1fffd96bc863e2d98d3e"
+  },
+  "package.json": {
+    "mtime": 1791033479.3551598,
+    "seen": 1791034302.9945035,
+    "ast_hash": "a3b4c7c14d2d8122fb6a6985b72c541d",
+    "semantic_hash": "a3b4c7c14d2d8122fb6a6985b72c541d"
+  },
+  "src/App.tsx": {
+    "mtime": 1791047042.6698353,
+    "seen": 1791047062.864817,
+    "ast_hash": "a4ff88da2b6d8a18cb0c0653cf31ec03",
+    "semantic_hash": ""
+  },
+  "src/components/About.tsx": {
+    "mtime": 1791046951.7645378,
+    "seen": 1791046992.301451,
+    "ast_hash": "3f9b677c333e48f57589619d7d505eea",
+    "semantic_hash": ""
+  },
+  "src/components/Contact.tsx": {
+    "mtime": 1791046966.258847,
+    "seen": 1791046992.3014534,
+    "ast_hash": "01dd3e35995d71b8d9c6426466e4c1e4",
+    "semantic_hash": ""
+  },
+  "src/components/Footer.tsx": {
+    "mtime": 1791046974.7182405,
+    "seen": 1791046992.3014545,
+    "ast_hash": "13481df9551593a5155fb30f867cceab",
+    "semantic_hash": ""
+  },
+  "src/components/Hero.tsx": {
+    "mtime": 1791046942.4310546,
+    "seen": 1791046992.301456,
+    "ast_hash": "751740bf6036d06521099d847ca7bc73",
+    "semantic_hash": ""
+  },
+  "src/components/Navigation.tsx": {
+    "mtime": 1791046947.0475419,
+    "seen": 1791046992.3014574,
+    "ast_hash": "75685923b8f91aeff69241ef0219c93a",
+    "semantic_hash": ""
+  },
+  "src/components/Services.tsx": {
+    "mtime": 1791046961.463868,
+    "seen": 1791046992.3014588,
+    "ast_hash": "bba31f24a44ffa1ea4a404d2290fe64a",
+    "semantic_hash": ""
+  },
+  "src/components/Work.tsx": {
+    "mtime": 1791046956.5274992,
+    "seen": 1791046992.3014603,
+    "ast_hash": "4b18c59d6c20fe479863aff91f8c1c08",
+    "semantic_hash": ""
+  },
+  "src/main.tsx": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945147,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "tsconfig.app.json": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945157,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a"
+  },
+  "tsconfig.json": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945168,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "tsconfig.node.json": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791034302.9945178,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": "f9cb81ddcea69ffdab672fc8c48dca66"
+  },
+  "vite.config.ts": {
+    "mtime": 1791003849.283698,
+    "seen": 1791034302.9945188,
+    "ast_hash": "4ca1f7ff9ce769b282a665bcaffbd380",
+    "semantic_hash": "4ca1f7ff9ce769b282a665bcaffbd380"
+  },
+  "public/android-hoist.mp4": {
+    "mtime": 1790852956.2418592,
+    "seen": 1791034302.9945197,
+    "ast_hash": "cc7ac2632501063676612a63e79ad324",
+    "semantic_hash": "cc7ac2632501063676612a63e79ad324"
+  },
+  "public/assets/videos/android-hoist.mp4": {
+    "mtime": 1790852956.2418592,
+    "seen": 1791034302.994521,
+    "ast_hash": "cc7ac2632501063676612a63e79ad324",
+    "semantic_hash": "cc7ac2632501063676612a63e79ad324"
+  },
+  "AGENTS.md": {
+    "mtime": 1791033632.5787194,
+    "seen": 1791044040.5994332,
+    "ast_hash": "21ceb6533048be51308e69e7b74a35cf",
+    "semantic_hash": ""
+  },
+  "HANDOFF.md": {
+    "mtime": 1791033254.6052003,
+    "seen": 1791044040.5994346,
+    "ast_hash": "b45e04376bc5c93e4fd0df5d8e8990ba",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790693063.2843988,
+    "seen": 1791044040.5994358,
+    "ast_hash": "10495bfcc6c568eca4dab6dd5df795d3",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1791046861.7724264,
+    "seen": 1791046992.3014739,
+    "ast_hash": "7171a909168ddb2b720b264953b05c13",
+    "semantic_hash": ""
+  },
+  "public/assets/images/amber-hologram-on-sci-fi-platform-1.png": {
+    "mtime": 1791003633.7469556,
+    "seen": 1791044040.5994382,
+    "ast_hash": "d56a17f18b1f886ad175c072f05e09e4",
+    "semantic_hash": ""
+  },
+  "public/assets/images/ebay.png": {
+    "mtime": 1791003633.7787285,
+    "seen": 1791044040.5994396,
+    "ast_hash": "166b5959ce01f18612e39f1dbf888ccf",
+    "semantic_hash": ""
+  },
+  "public/assets/images/esperanza.png": {
+    "mtime": 1791003633.7787285,
+    "seen": 1791044040.5994408,
+    "ast_hash": "4bfec6e452e4da1ca9096754f26b4460",
+    "semantic_hash": ""
+  },
+  "public/assets/images/footer-section.png": {
+    "mtime": 1791003633.8895671,
+    "seen": 1791044040.599442,
+    "ast_hash": "5caa9fb423d658d19e26fdf18586c70a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/fulda-page-1-1.jpg": {
+    "mtime": 1791003633.8421898,
+    "seen": 1791044040.599443,
+    "ast_hash": "e91273c38cc215eccf822a33a9d03e04",
+    "semantic_hash": ""
+  },
+  "public/assets/images/fulda.png": {
+    "mtime": 1791003633.7787285,
+    "seen": 1791044040.5994442,
+    "ast_hash": "25e26bd14322d2197a27869120c6081e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/group-2.svg": {
+    "mtime": 1791003633.8738015,
+    "seen": 1791044040.5994456,
+    "ast_hash": "b91f3abe07223b44344f4ffd78cef4d1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/group-6.svg": {
+    "mtime": 1791003633.857874,
+    "seen": 1791044040.5994465,
+    "ast_hash": "2824ee4222bc5dc053ad44a173e6320f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/group-8.svg": {
+    "mtime": 1791003633.8421898,
+    "seen": 1791044040.5994475,
+    "ast_hash": "bd77c09c9e03266732081f2170da6cfe",
+    "semantic_hash": ""
+  },
+  "public/assets/images/group.svg": {
+    "mtime": 1791003633.8738015,
+    "seen": 1791044040.5994487,
+    "ast_hash": "838fac74e5074ad8c3ef1ef631f3a595",
+    "semantic_hash": ""
+  },
+  "public/assets/images/image-4.png": {
+    "mtime": 1791003633.857874,
+    "seen": 1791044040.5994496,
+    "ast_hash": "7588baa03176eac20c65eff41ad0f442",
+    "semantic_hash": ""
+  },
+  "public/assets/images/larcandasset.png": {
+    "mtime": 1791003633.7946167,
+    "seen": 1791044040.599451,
+    "ast_hash": "8497843098622b1d9c8f7a166ad95652",
+    "semantic_hash": ""
+  },
+  "public/assets/images/logo.svg": {
+    "mtime": 1791003633.7312655,
+    "seen": 1791044040.5994523,
+    "ast_hash": "bdcd8ea7f0254d009f9585f7e7077f44",
+    "semantic_hash": ""
+  },
+  "public/assets/images/mask-group-2.png": {
+    "mtime": 1791003633.762844,
+    "seen": 1791044040.5994532,
+    "ast_hash": "e5e30111c6e6f024584c17918bab003f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/mask-group-3.png": {
+    "mtime": 1791003633.762844,
+    "seen": 1791044040.5994542,
+    "ast_hash": "325c44859c9396f59bf0854af1f10276",
+    "semantic_hash": ""
+  },
+  "public/assets/images/mask-group.png": {
+    "mtime": 1791003633.7469556,
+    "seen": 1791044040.5994556,
+    "ast_hash": "9b4b1fb3d2c5424958cc2aa72fbfbb37",
+    "semantic_hash": ""
+  },
+  "public/assets/images/meta-color.svg": {
+    "mtime": 1791003633.8895671,
+    "seen": 1791044040.5994565,
+    "ast_hash": "1e512b38945373cc2138cf5be72f680f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/neon-amber-web-design-window-1.png": {
+    "mtime": 1791003633.7946167,
+    "seen": 1791044040.5994577,
+    "ast_hash": "fa845516e4e50774e2e233238922d846",
+    "semantic_hash": ""
+  },
+  "public/assets/images/neon-orange-print-design-icon-1.png": {
+    "mtime": 1791003633.819562,
+    "seen": 1791044040.599459,
+    "ast_hash": "1264b3eb7c58c45071bac0fdd0429bef",
+    "semantic_hash": ""
+  },
+  "public/assets/images/rectangle.jpg": {
+    "mtime": 1791003633.857874,
+    "seen": 1791044040.59946,
+    "ast_hash": "95cbe85434127e7c4da91f3d240e38c5",
+    "semantic_hash": ""
+  },
+  "public/assets/images/socmedia-icons.svg": {
+    "mtime": 1791014561.6284134,
+    "seen": 1791044040.5994606,
+    "ast_hash": "1256ce3208cdbf801e6b007785b9b78d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/video.png": {
+    "mtime": 1791003633.7165763,
+    "seen": 1791044040.5994616,
+    "ast_hash": "7aeceaf902492a30b83514e4fc7beb2b",
+    "semantic_hash": ""
+  },
+  "public/favicon.svg": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791044040.5994632,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": ""
+  },
+  "public/icons.svg": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791044040.5994642,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": ""
+  },
+  "src/assets/hero.png": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791044040.5994651,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": ""
+  },
+  "src/assets/react.svg": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791044040.5994663,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": ""
+  },
+  "src/assets/vite.svg": {
+    "mtime": 1790693063.3000877,
+    "seen": 1791044040.5994675,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": ""
+  }
+}

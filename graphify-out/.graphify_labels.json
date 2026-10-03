@@ -1,1 +1,15 @@
-{"0": "App.tsx", "1": "compilerOptions", "2": "package.json", "3": "compilerOptions", "4": "devDependencies", "5": "scripts", "6": ".oxlintrc.json", "7": "dependencies", "8": "tsconfig.json"}
+{
+  "0": "App.tsx",
+  "1": "compilerOptions",
+  "2": "package.json",
+  "3": "compilerOptions",
+  "4": "devDependencies",
+  "5": "scripts",
+  "6": ".oxlintrc.json",
+  "7": "dependencies",
+  "8": "tsconfig.json",
+  "9": "Portfolio Codebase Handoff",
+  "10": "Component Notes",
+  "11": "React + TypeScript + Vite",
+  "12": "AGENTS.md"
+}
