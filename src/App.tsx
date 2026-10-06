@@ -10,13 +10,13 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      {createPortal(<Hero />, document.body)}
-      {createPortal(<Navigation />, document.body)}
-      {createPortal(<About />, document.body)}
-      {createPortal(<Work />, document.body)}
-      {createPortal(<Services />, document.body)}
-      {createPortal(<Contact />, document.body)}
-      {createPortal(<Footer />, document.body)}
+      {createPortal(<Hero  />, document.body)}
+      {createPortal(<Navigation  />, document.body)}
+      {createPortal(<About  />, document.body)}
+      {createPortal(<Work  />, document.body)}
+      {createPortal(<Services  />, document.body)}
+      {createPortal(<Contact  />, document.body)}
+      {createPortal(<Footer  />, document.body)}
       <div>
       </div>
     </>

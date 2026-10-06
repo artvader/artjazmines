@@ -1,71 +1,127 @@
-export default function Services() {
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { services, type Service } from "../config/services";
+import "swiper/css";
+
+function ServicePanel({
+  service,
+  panelId,
+}: {
+  service: Service;
+  panelId?: string;
+}) {
   return (
-    <div id="services" className="Services shrink-0 self-stretch max-w-[1280px] flex flex-col items-start gap-6 py-0 px-6">
-      <div className="shrink-0 h-24 w-[1367px] relative">
-        <p className="absolute left-0 top-0 w-[1280px] [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)]">
-          FABRICATION<br /><span className="text-[var(--color-text-accent)]">TYPES</span>
-        </p>
-        <p className="absolute left-[135px] top-[51px] w-[1232px] h-[38px] opacity-80 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
-          SERVICES OFFERED
-        </p>
-      </div>
+    <div
+      id={panelId}
+      className="services relative h-full min-w-0 flex-1 overflow-hidden "
+      style={{ backgroundColor: service.panelColor }}
+    >
+      <p className="absolute bottom-4 left-6 z-10 max-w-sm pr-4 text-sm font-normal text-[var(--color-text-primary)] opacity-60">
+        {service.description}
+      </p>
+      {service.images?.map((image) => (
+        <img
+          key={image.src}
+          className={image.className}
+          src={image.src}
+          alt={image.alt}
+        />
+      ))}
+    </div>
+  );
+}
 
-      <div className="shrink-0 self-stretch max-w-[1280px] flex justify-center items-start border border-[var(--labels-vibrant-quaternary)]">
-        {/* Service 1: Web Design */}
-        <div className="shrink-0 h-[401px] flex justify-center items-end">
-          <div className="shrink-0 w-9 h-[401px] flex flex-col justify-end items-center gap-2.5 py-4 px-0 bg-[var(--color-service-web)]">
-            <p className="shrink-0 h-9 self-stretch [transform:rotate(-90deg)] font-['Koulen',_sans-serif] text-[length:20px] font-normal text-[rgb(var(--color-text-dark-rgb)_/_0.8)] whitespace-nowrap">
-              WEB DESIGN
-            </p>
-          </div>
-          <div className="shrink-0 w-0 h-[400px] relative">
-            <div className="absolute left-0 top-0 w-0 h-[400px] bg-[rgb(var(--color-service-web-rgb)_/_0.3)]"></div>
-            <img
-              className="absolute left-0 top-[400px] w-0 h-0 [mix-blend-mode:lighten] object-cover"
-              src="/assets/images/neon-amber-web-design-window-1.png"
-              alt="Web Design Window"
-            />
-          </div>
+export default function Services() {
+  const [activeService, setActiveService] = useState<Service["id"]>("print");
+
+  return (
+    <div
+      id="services"
+      className="Services relative flex shrink-0 self-stretch flex-col items-start gap-6 bg-[var(--color-bg-page)]  py-0 scroll-mt-[104px] pb-6"
+    >
+      <div className="relative mx-auto w-full max-w-5xl px-6">
+        <div className="mb-3 h-24 shrink-0">
+          <p className="[text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)]">
+            FABRICATION
+            <br />
+            <span className="text-[var(--color-text-accent)]">TYPES</span>
+            <span className="opacity-30 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
+              SERVICES OFFERED
+            </span>
+          </p>
         </div>
 
-        {/* Service 2: Print Design */}
-        <div className="shrink-0 h-[401px] flex justify-center items-end">
-          <div className="shrink-0 w-9 h-[401px] flex flex-col justify-end items-center gap-2.5 py-4 px-0 bg-[var(--color-service-print)]">
-            <p className="shrink-0 h-9 self-stretch [transform:rotate(-90deg)] font-['Koulen',_sans-serif] text-[length:20px] font-normal text-[rgb(var(--color-text-primary-rgb)_/_0.8)] whitespace-nowrap">
-              PRINT DESIGN
-            </p>
-          </div>
-          <div className="shrink-0 w-[1086px] h-[400px] relative overflow-hidden">
-            <div className="absolute left-0 top-0 w-[1086px] h-[400px] bg-[rgb(var(--color-service-print-rgb)_/_0.3)]"></div>
-            <p className="absolute left-[19px] top-[330px] w-[394px] h-[65px] opacity-60 font-['Lato',_sans-serif] text-[length:16px] font-normal text-[var(--color-text-primary)]">
-              Visual designs built for print, combining strong composition, clear typography, and purposeful branding across marketing and promotional materials.
-            </p>
-            <img className="absolute left-[59px] top-[91px] w-56 h-[187px] opacity-30 [mix-blend-mode:lighten] object-cover" src="/assets/images/neon-orange-print-design-icon-1.png" alt="Print Icon" />
-            <img className="absolute left-[571px] top-[149px] w-[430px] h-[168px] [transform-origin:0_0] [transform:rotate(-12.58deg)] object-cover shadow-lg" src="/assets/images/fulda-page-1-1.jpg" alt="Fulda Page 1" />
-            <img className="absolute left-[496px] top-[75px] w-[266px] h-[194px]" src="/assets/images/group-8.svg" alt="" />
-            <img className="absolute left-[543px] top-[35px] w-60 h-[327px] object-cover" src="/assets/images/image-4.png" alt="" />
-            <img className="absolute left-[693px] top-[153px] w-[354px] h-[216px] object-cover" src="/assets/images/rectangle.jpg" alt="" />
-          </div>
-        </div>
+        <Swiper
+          className="services-mobile-swiper h-[400px] w-full overflow-visible md:hidden"
+          slidesPerView="auto"
+          spaceBetween={0}
+          loop
+          grabCursor
+        >
+          {services.map((service) => (
+            <SwiperSlide
+              key={service.id}
+              className="services-mobile-slide overflow-hidden border border-[var(--labels-vibrant-quaternary)]"
+            >
+              <section className="flex h-full w-full overflow-hidden">
+                <div
+                  className="flex w-10 shrink-0 items-end justify-center px-0 py-3"
+                  style={{ backgroundColor: service.color }}
+                >
+                  <span
+                    className="[writing-mode:sideways-lr] font-['Koulen',_sans-serif] text-[length:20px] font-normal whitespace-nowrap"
+                    style={{ color: service.tabTextColor, opacity: 0.9 }}
+                  >
+                    {service.title}
+                  </span>
+                </div>
 
-        {/* Service 3: Branding */}
-        <div className="shrink-0 h-[401px] flex justify-center items-end">
-          <div className="shrink-0 w-9 h-[401px] flex flex-col justify-end items-center gap-2.5 py-4 px-0 bg-[var(--color-service-brand)]">
-            <p className="shrink-0 h-9 self-stretch [transform:rotate(-90deg)] font-['Koulen',_sans-serif] text-[length:20px] font-normal text-[rgb(var(--color-text-primary-rgb)_/_0.6)] whitespace-nowrap">
-              BRANDING
-            </p>
-          </div>
-          <div className="shrink-0 w-0 h-[400px] bg-[rgb(var(--color-service-brand-rgb)_/_0.3)]"></div>
-        </div>
+                <ServicePanel service={service} />
+              </section>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-        {/* Service 4: Prototyping */}
-        <div className="shrink-0 w-9 h-[401px] flex justify-center items-end">
-          <div className="shrink-0 w-9 h-[401px] flex flex-col justify-end items-center gap-2.5 py-4 px-0 bg-[var(--color-service-prototype)]">
-            <p className="shrink-0 h-9 self-stretch [transform:rotate(-90deg)] font-['Koulen',_sans-serif] text-[length:20px] font-normal text-[rgb(var(--color-text-primary-rgb)_/_0.6)] whitespace-nowrap">
-              PROTOTYPING
-            </p>
-          </div>
-          <div className="shrink-0 w-0 h-[400px] bg-[rgb(var(--color-service-prototype-rgb)_/_0.3)]"></div>
+        <div className="services-deck hidden h-[400px] w-full overflow-hidden border border-[var(--labels-vibrant-quaternary)] md:flex">
+          {services.map((service) => {
+            const isActive = activeService === service.id;
+
+            return (
+              <section
+                key={service.id}
+                className={`flex min-w-9 shrink-0 overflow-hidden transition-[flex-grow,flex-basis] duration-500 ease-in-out ${
+                  isActive ? "grow basis-0" : "grow-0 basis-9"
+                }`}
+              >
+                <button
+                  type="button"
+                  className="group flex w-9 shrink-0 cursor-pointer items-end justify-center border-0 px-0 py-3 outline-offset-[-4px] focus-visible:outline-2 focus-visible:outline-[var(--color-text-accent)]"
+                  style={{ backgroundColor: service.color }}
+                  onClick={() => setActiveService(service.id)}
+                  aria-expanded={isActive}
+                  aria-controls={`${service.id}-service-panel`}
+                >
+                  <span
+                    className="[writing-mode:sideways-lr] font-['Koulen',_sans-serif] text-[length:20px] font-normal whitespace-nowrap transition-opacity group-hover:opacity-100"
+                    style={{ color: service.tabTextColor, opacity: isActive ? 1 : 0.8 }}
+                  >
+                    {service.title}
+                  </span>
+                </button>
+
+                <div
+                  className={`flex h-full min-w-0 flex-1 transition-opacity duration-300 ${
+                    isActive ? "opacity-100" : "pointer-events-none opacity-0"
+                  }`}
+                >
+                  <ServicePanel
+                    service={service}
+                    panelId={`${service.id}-service-panel`}
+                  />
+                </div>
+              </section>
+            );
+          })}
         </div>
       </div>
     </div>

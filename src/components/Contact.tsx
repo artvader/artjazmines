@@ -1,75 +1,139 @@
+import { useEffect, useState, type CSSProperties } from "react";
+import SignalWave from "./SignalWave";
+
+const ROUTING_FILL_DURATION_MS = 1500;
+
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [routingStarted, setRoutingStarted] = useState(false);
+  const [routingProgress, setRoutingProgress] = useState(0);
+  const routingComplete = routingProgress === 100;
+
+  useEffect(() => {
+    if (!routingStarted) return;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let frame = 0;
+    const started = performance.now();
+    const advance = (now: number) => {
+      const progress = reducedMotion ? 100 : Math.min(100, ((now - started) / ROUTING_FILL_DURATION_MS) * 100);
+      setRoutingProgress(progress);
+      if (progress < 100) frame = window.requestAnimationFrame(advance);
+    };
+    frame = window.requestAnimationFrame(advance);
+    return () => window.cancelAnimationFrame(frame);
+  }, [routingStarted]);
+  const integrity = name.trim().length > 0 ? 80 : 0;
+  const dataStream = email.trim().length > 0 ? 94 : 0;
+  const signalStrength = message.trim().length > 0 ? 87 : 0;
   return (
-    <div id="contact" className="Contact shrink-0 self-stretch max-w-[1280px] flex flex-col justify-center items-start gap-[26px] py-0 px-6">
-      <div className="shrink-0 h-24 w-[1451px] relative">
-        <p className="absolute left-0 top-0 [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)] whitespace-nowrap">
-          COMMUNICATIONS<span className="text-[var(--color-text-primary)]"> <br /></span><span className="text-[var(--color-text-accent)]">CHANNELS</span>
+    <div id="contact" className="Contact relative bg-[var(--color-bg-page)] scroll-mt-[104px]">
+      <div className="h-24 max-w-5xl mx-auto px-6">
+        <p className="[text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)] whitespace-nowrap">
+          COMMUNICATIONS
+          <span className="text-[var(--color-text-primary)]">
+            {" "}
+            <br />
+          </span>
+          <span className="text-[var(--color-text-accent)]">CHANNELS</span>
         </p>
-        <p className="absolute left-[219px] top-[52px] w-[1232px] h-[38px] opacity-80 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
+        <p className=" left-[219px] top-[52px] w-[1232px] h-[38px] opacity-80 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
           CONTACT FORM
         </p>
       </div>
 
-      <div className="shrink-0 self-stretch flex flex-col items-center gap-2.5">
-        <div className="shrink-0 h-[312px] w-[812px] relative">
-          <img className="absolute left-[209px] top-[21px] w-[259px] h-[109px]" src="/assets/images/group-6.svg" alt="" />
-
+      <div className="flex flex-wrap md:flex-nowrap gap-6 max-w-4xl mx-auto px-6 py-6">
+        <img
+          className="w-[185px] h-[239px] [mix-blend-mode:luminosity] pointer-events-none "
+          src="/assets/images/group.svg"
+          alt=""
+        />
+        <div className=" relative basis-full">
+          <div className="mb-6">
+            <SignalWave  />
+          </div>
           {/* Telemetry / Signal Status */}
-          <div className="absolute left-52 top-[151px] w-[261px] h-[79px]">
-            <div className="absolute left-0 top-0 w-[261px] h-[79px] grid grid-cols-[minmax(0,_1fr)_minmax(0,_1fr)] grid-rows-[minmax(0,_1fr)_minmax(0,_1fr)_minmax(0,_1fr)_minmax(0,_1fr)] gap-y-[1px] gap-x-0">
-              <p className="row-[2_/_span_1] col-[1_/_span_1] w-[129px] justify-self-start self-center font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)]">
-                MESSAGE INTEGRITY
-              </p>
-              <div className="row-[1_/_span_1] col-[2_/_span_1] h-1 self-center rounded-[4px] bg-[rgb(var(--color-surface-muted-rgb)_/_0.3)]"></div>
-              <div className="row-[2_/_span_1] col-[2_/_span_1] h-1 self-center rounded-[4px] bg-[rgb(var(--color-surface-muted-rgb)_/_0.3)]"></div>
-              <div className="row-[3_/_span_1] col-[2_/_span_1] h-1 self-center rounded-[4px] bg-[rgb(var(--color-surface-muted-rgb)_/_0.3)]"></div>
-              <div className="row-[4_/_span_1] col-[2_/_span_1] h-1 self-center rounded-[4px] bg-[rgb(var(--color-surface-muted-rgb)_/_0.3)]"></div>
-              <p className="row-[4_/_span_1] col-[1_/_span_1] w-[122px] justify-self-start self-center font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)]">
-                DATA STREAM
-              </p>
-              <p className="row-[1_/_span_1] col-[1_/_span_1] self-center font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)] flex flex-col justify-end">
-                <span>Signal Strength</span>
-              </p>
-              <p className="row-[3_/_span_1] col-[1_/_span_1] justify-self-start self-center font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)] whitespace-nowrap">
-                Signal Strength
-              </p>
+          <div className="grid grid-cols-[10ch_1fr] gap-2 w-full items-center content-center">
+            <p className="font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)]">
+              MESSAGE INTEGRITY
+            </p>
+            <div className="progress-bar bg-white/30 w-full h-2 self-center rounded overflow-hidden"
+              role="progressbar" aria-label="Message Integrity" aria-valuemin={0} aria-valuemax={100} aria-valuenow={integrity}>
+              <div className="message-integrity-fill bg-white/20 h-2 self-center rounded"
+                style={{ "--integrity-base": `${integrity}%` } as CSSProperties}></div>
+            </div>
+            <p className="font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)]">
+              DATA STREAM
+            </p>
+            <div className="progress-bar bg-white/30 w-full h-2 self-center rounded overflow-hidden"
+              role="progressbar" aria-label="Data Stream" aria-valuemin={0} aria-valuemax={100} aria-valuenow={dataStream}>
+              <div className="message-integrity-fill bg-white/20 h-2 self-center rounded"
+                style={{ "--integrity-base": `${dataStream}%`, animationDuration: "1.7s", animationDelay: "-0.4s" } as CSSProperties}></div>
+            </div>
+            <p className=" font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)]">
+              Signal Strength
+            </p>
+            <div className="progress-bar bg-white/30 w-full h-2 self-center rounded overflow-hidden"
+              role="progressbar" aria-label="Signal Strength" aria-valuemin={0} aria-valuemax={100} aria-valuenow={signalStrength}>
+              <div className="message-integrity-fill bg-white/20 h-2 self-center rounded"
+                style={{ "--integrity-base": `${signalStrength}%`, animationDuration: "1.4s", animationDelay: "-0.7s" } as CSSProperties}></div>
+            </div>
+            <p className="font-['Koulen',_sans-serif] text-[length:10px] font-normal leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.3)]">
+              Routing Efficiency
+            </p>
+            <div className="progress-bar bg-white/30 w-full h-2 self-center rounded overflow-hidden"
+              role="progressbar" aria-label="Routing Efficiency" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(routingProgress)}>
+              <div className={`${routingStarted ? "" : "message-integrity-fill"} bg-white/20 h-2 self-center rounded`}
+                style={{ "--integrity-base": "0%", width: `${routingProgress}%`, animationDuration: "1.9s", animationDelay: "-0.9s" } as CSSProperties}></div>
             </div>
           </div>
-
-          {/* Form Controls */}
-          <form onSubmit={(e) => e.preventDefault()} className="absolute left-[507px] top-[23px] w-[305px] h-[289px]">
-            <div className="absolute left-0 top-0 w-[305px] h-10 flex items-center gap-2.5 rounded-[8px] bg-[rgb(var(--color-surface-muted-rgb)_/_0.6)]">
-              <input
-                className="w-full h-full bg-transparent px-4 font-['Inter',_sans-serif] text-[length:16px] font-normal text-[var(--color-bg-page)] placeholder:text-[var(--color-bg-page)] outline-none"
-                type="text"
-                placeholder="Name"
-                aria-label="Name"
-              />
-            </div>
-            <input
-              className="absolute left-0 top-14 w-[305px] h-10 flex items-center gap-2.5 px-4 rounded-[8px] bg-[rgb(var(--color-surface-muted-rgb)_/_0.6)] font-['Inter',_sans-serif] text-[length:16px] font-normal text-[var(--color-bg-page)] placeholder:text-[var(--color-bg-page)] outline-none"
-              type="email"
-              placeholder="Email"
-              aria-label="Email"
-            />
-            <textarea
-              className="absolute left-0 top-28 w-[305px] h-[119px] flex items-start gap-2.5 py-2.5 px-4 rounded-[8px] bg-[rgb(var(--color-surface-muted-rgb)_/_0.6)] font-['Inter',_sans-serif] text-[length:16px] font-normal text-[var(--color-bg-page)] placeholder:text-[var(--color-bg-page)] outline-none resize-none"
-              placeholder="Message"
-              aria-label="Message"
-            ></textarea>
-            <button
-              type="submit"
-              className="absolute left-52 top-[247px] w-[97px] h-[42px] flex justify-center items-center gap-2.5 py-3 px-6 rounded-[8px] bg-[var(--color-action-primary)] hover:bg-[var(--color-action-primary-hover)] transition-colors cursor-pointer"
-            >
-              <span className="shrink-0 font-['Lato',_sans-serif] text-[length:18px] font-bold leading-[18px] tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.8)] whitespace-nowrap">
-                SEND
-              </span>
-            </button>
-          </form>
-
-          <img className="absolute left-0 top-0 w-[185px] h-[239px] [mix-blend-mode:luminosity] pointer-events-none" src="/assets/images/group.svg" alt="" />
-          <img className="absolute left-0 top-0 w-[185px] h-[239px] [mix-blend-mode:color-burn] pointer-events-none" src="/assets/images/group-2.svg" alt="" />
         </div>
+
+        {/* Form Controls */}
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (!routingStarted) setRoutingStarted(true);
+          }}
+          className="flex w-full md:w-[305px] shrink-0 flex-col gap-3"
+        >
+          <div className="h-10 w-full rounded-[8px] bg-white/30 focus-within:ring-2 focus-within:ring-[var(--color-action-primary)]">
+            <input
+              className="w-full h-full bg-transparent px-5 text-sm font-normal text-[var(--color-bg-page)] placeholder:text-[var(--color-bg-page)] outline-none"
+              type="text"
+              placeholder="Name"
+              aria-label="Name"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+            />
+          </div>
+          <input
+            className="w-full h-10 px-5 rounded-[8px] bg-white/30 text-sm font-normal text-[var(--color-bg-page)] placeholder:text-[var(--color-bg-page)] outline-none focus:ring-2 focus:ring-[var(--color-action-primary)]"
+            type="email"
+            placeholder="Email"
+            aria-label="Email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+          />
+          <textarea
+            className="w-full h-[150px] py-3 px-5 rounded-[8px] bg-white/30 text-sm font-normal text-[var(--color-bg-page)] placeholder:text-[var(--color-bg-page)] outline-none resize-none focus:ring-2 focus:ring-[var(--color-action-primary)]"
+            placeholder="Message"
+            aria-label="Message"
+            value={message}
+            onChange={(event) => setMessage(event.target.value)}
+          ></textarea>
+          <button
+            type="submit"
+            disabled={routingStarted}
+            aria-busy={routingStarted && !routingComplete}
+            className="self-end h-10 flex justify-center items-center px-6 rounded-[8px] bg-[var(--color-action-primary)] enabled:hover:bg-[var(--color-action-primary-hover)] transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-text-primary)]"
+          >
+            <span className="text-sm font-bold leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.8)] whitespace-nowrap">
+              SEND
+            </span>
+          </button>
+        </form>
       </div>
     </div>
   );

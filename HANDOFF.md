@@ -94,12 +94,12 @@ The top-level shell uses `bg-[#290c01]`, centers all sections, hides horizontal 
 - Absolute-positioned inside the hero.
 - Logo source: `/assets/images/logo.svg`.
 - Anchor links target `#work`, `#about`, `#portfolio`, `#services`, and `#contact`.
-- Styling uses a translucent rounded navigation bar with local `Plus Jakarta Sans`.
+- Styling uses a translucent rounded navigation bar with the site-wide default `Lato`.
 
 ### `About.tsx`
 
 - Contains the `#about` section.
-- Uses large `Koulen` headings, `Lekton` metadata labels, and an `Inter` body paragraph.
+- Uses large `Koulen` headings, `Lekton` metadata labels, and the site-wide default `Lato` body font.
 - Bio visual source: `/assets/images/amber-hologram-on-sci-fi-platform-1.png`.
 - Layout is fixed and desktop-oriented.
 
@@ -136,8 +136,6 @@ The top-level shell uses `bg-[#290c01]`, centers all sections, hides horizontal 
 - Fonts defined locally:
   - `Koulen`
   - `Lekton`
-  - `Plus Jakarta Sans` weight 700
-  - `Inter` weight 400
   - `Lato` weights 400 and 700
 - The app uses many arbitrary Tailwind values and exact pixel measurements, likely from a design export.
 - Most image paths are root-relative under `/assets/...`, which works because Vite serves `public` as the web root.

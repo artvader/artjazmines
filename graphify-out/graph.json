@@ -4,6 +4,58 @@
   "graph": {},
   "nodes": [
     {
+      "id": "src_components_navigation_pillrect",
+      "label": "PillRect",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Navigation.tsx",
+      "file_type": "code",
+      "norm_label": "pillrect",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_config_navigationmenu_navitemid",
+      "label": "NavItemId",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Navigation.tsx",
+      "file_type": "code",
+      "norm_label": "navitemid",
+      "source_file": "src/config/navigationMenu.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_config_services_service",
+      "label": "Service",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Services.tsx",
+      "file_type": "code",
+      "norm_label": "service",
+      "source_file": "src/config/services.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_config_services_serviceimage",
+      "label": "ServiceImage",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Services.tsx",
+      "file_type": "code",
+      "norm_label": "serviceimage",
+      "source_file": "src/config/services.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "src_app_app",
       "label": "App()",
       "_callable": true,
@@ -37,7 +89,7 @@
       "file_type": "code",
       "norm_label": "contact()",
       "source_file": "src/components/Contact.tsx",
-      "source_location": "L1"
+      "source_location": "L6"
     },
     {
       "id": "src_components_footer_footer",
@@ -61,7 +113,7 @@
       "file_type": "code",
       "norm_label": "hero()",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L6"
+      "source_location": "L23"
     },
     {
       "id": "src_components_navigation_navigation",
@@ -73,7 +125,7 @@
       "file_type": "code",
       "norm_label": "navigation()",
       "source_file": "src/components/Navigation.tsx",
-      "source_location": "L1"
+      "source_location": "L16"
     },
     {
       "id": "src_components_services_services",
@@ -85,7 +137,19 @@
       "file_type": "code",
       "norm_label": "services()",
       "source_file": "src/components/Services.tsx",
-      "source_location": "L1"
+      "source_location": "L34"
+    },
+    {
+      "id": "src_components_signalwave_signalwave",
+      "label": "SignalWave()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "signalwave()",
+      "source_file": "src/components/SignalWave.tsx",
+      "source_location": "L9"
     },
     {
       "id": "src_components_work_work",
@@ -97,7 +161,19 @@
       "file_type": "code",
       "norm_label": "work()",
       "source_file": "src/components/Work.tsx",
-      "source_location": "L1"
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_services_servicepanel",
+      "label": "ServicePanel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Services.tsx",
+      "file_type": "code",
+      "norm_label": "servicepanel()",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L6"
     },
     {
       "id": "src_app",
@@ -155,25 +231,25 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_navigation",
-      "label": "Navigation.tsx",
+      "id": "src_components_hero_ember_particles",
+      "label": "EMBER_PARTICLES",
       "_origin": "ast",
       "community": 0,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "navigation.tsx",
-      "source_file": "src/components/Navigation.tsx",
-      "source_location": "L1"
+      "norm_label": "ember_particles",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L8"
     },
     {
-      "id": "src_components_services",
-      "label": "Services.tsx",
+      "id": "src_components_signalwave",
+      "label": "SignalWave.tsx",
       "_origin": "ast",
       "community": 0,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "services.tsx",
-      "source_file": "src/components/Services.tsx",
+      "norm_label": "signalwave.tsx",
+      "source_file": "src/components/SignalWave.tsx",
       "source_location": "L1"
     },
     {
@@ -185,6 +261,28 @@
       "file_type": "code",
       "norm_label": "work.tsx",
       "source_file": "src/components/Work.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_config_work",
+      "label": "work.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "work.ts",
+      "source_file": "src/config/work.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_config_work_portfoliocards",
+      "label": "portfolioCards",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "portfoliocards",
+      "source_file": "src/config/work.ts",
       "source_location": "L1"
     },
     {
@@ -453,100 +551,59 @@
       "source_location": "L25"
     },
     {
-      "id": "handoff_about_tsx",
-      "label": "`About.tsx`",
+      "id": "src_components_navigation",
+      "label": "Navigation.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "`about.tsx`",
-      "source_file": "HANDOFF.md",
-      "source_location": "L99"
+      "community_name": "Navigation.tsx",
+      "file_type": "code",
+      "norm_label": "navigation.tsx",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "handoff_component_notes",
-      "label": "Component Notes",
+      "id": "src_config_navigationmenu",
+      "label": "navigationMenu.ts",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "component notes",
-      "source_file": "HANDOFF.md",
-      "source_location": "L81"
+      "community_name": "Navigation.tsx",
+      "file_type": "code",
+      "norm_label": "navigationmenu.ts",
+      "source_file": "src/config/navigationMenu.ts",
+      "source_location": "L1"
     },
     {
-      "id": "handoff_contact_tsx",
-      "label": "`Contact.tsx`",
+      "id": "src_config_navigationmenu_mobilemenucontent",
+      "label": "mobileMenuContent",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "`contact.tsx`",
-      "source_file": "HANDOFF.md",
-      "source_location": "L120"
+      "community_name": "Navigation.tsx",
+      "file_type": "code",
+      "norm_label": "mobilemenucontent",
+      "source_file": "src/config/navigationMenu.ts",
+      "source_location": "L10"
     },
     {
-      "id": "handoff_footer_tsx",
-      "label": "`Footer.tsx`",
+      "id": "src_config_navigationmenu_navitems",
+      "label": "navItems",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "`footer.tsx`",
-      "source_file": "HANDOFF.md",
-      "source_location": "L127"
+      "community_name": "Navigation.tsx",
+      "file_type": "code",
+      "norm_label": "navitems",
+      "source_file": "src/config/navigationMenu.ts",
+      "source_location": "L1"
     },
     {
-      "id": "handoff_hero_tsx",
-      "label": "`Hero.tsx`",
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "`hero.tsx`",
-      "source_file": "HANDOFF.md",
-      "source_location": "L83"
-    },
-    {
-      "id": "handoff_navigation_tsx",
-      "label": "`Navigation.tsx`",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "`navigation.tsx`",
-      "source_file": "HANDOFF.md",
-      "source_location": "L92"
-    },
-    {
-      "id": "handoff_services_tsx",
-      "label": "`Services.tsx`",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "`services.tsx`",
-      "source_file": "HANDOFF.md",
-      "source_location": "L113"
-    },
-    {
-      "id": "handoff_work_tsx",
-      "label": "`Work.tsx`",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "Component Notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "`work.tsx`",
-      "source_file": "HANDOFF.md",
-      "source_location": "L106"
+      "community_name": "Navigation.tsx",
+      "file_type": "concept",
+      "norm_label": "lucide-react",
+      "source_file": "package.json",
+      "source_location": "L16"
     },
     {
       "id": "readme",
@@ -619,6 +676,50 @@
       "norm_label": "graphify",
       "source_file": "AGENTS.md",
       "source_location": "L1"
+    },
+    {
+      "id": "src_components_services",
+      "label": "Services.tsx",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Services.tsx",
+      "file_type": "code",
+      "norm_label": "services.tsx",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_config_services",
+      "label": "services.ts",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Services.tsx",
+      "file_type": "code",
+      "norm_label": "services.ts",
+      "source_file": "src/config/services.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_config_services_services",
+      "label": "services",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Services.tsx",
+      "file_type": "code",
+      "norm_label": "services",
+      "source_file": "src/config/services.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "ref_swiper",
+      "label": "swiper",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Services.tsx",
+      "file_type": "concept",
+      "norm_label": "swiper",
+      "source_file": "package.json",
+      "source_location": "L19"
     },
     {
       "id": "package",
@@ -695,18 +796,7 @@
       "file_type": "concept",
       "norm_label": "@cup319/mmpl",
       "source_file": "package.json",
-      "source_location": "L22"
-    },
-    {
-      "id": "ref_lucide_react",
-      "label": "lucide-react",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "lucide-react",
-      "source_file": "package.json",
-      "source_location": "L16"
+      "source_location": "L23"
     },
     {
       "id": "ref_oxlint",
@@ -717,7 +807,7 @@
       "file_type": "concept",
       "norm_label": "oxlint",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "ref_tailwindcss",
@@ -728,7 +818,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "ref_tailwindcss_vite",
@@ -750,7 +840,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "ref_types_react",
@@ -761,7 +851,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "ref_types_react_dom",
@@ -772,7 +862,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "ref_typescript",
@@ -783,7 +873,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "ref_vite",
@@ -794,7 +884,7 @@
       "file_type": "concept",
       "norm_label": "vite",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "ref_vitejs_plugin_react",
@@ -805,7 +895,7 @@
       "file_type": "concept",
       "norm_label": "@vitejs/plugin-react",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "tsconfig_node",
@@ -1003,7 +1093,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "package_devdependencies_cup319_mmpl",
@@ -1014,7 +1104,7 @@
       "file_type": "code",
       "norm_label": "@cup319/mmpl",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "package_devdependencies_oxlint",
@@ -1025,7 +1115,7 @@
       "file_type": "code",
       "norm_label": "oxlint",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -1036,7 +1126,7 @@
       "file_type": "code",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "package_devdependencies_types_react",
@@ -1047,7 +1137,7 @@
       "file_type": "code",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "package_devdependencies_types_react_dom",
@@ -1058,7 +1148,7 @@
       "file_type": "code",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "package_devdependencies_typescript",
@@ -1069,7 +1159,7 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "package_devdependencies_vite",
@@ -1080,7 +1170,7 @@
       "file_type": "code",
       "norm_label": "vite",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "package_devdependencies_vitejs_plugin_react",
@@ -1091,7 +1181,7 @@
       "file_type": "code",
       "norm_label": "@vitejs/plugin-react",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "package_scripts",
@@ -1281,6 +1371,17 @@
       "source_location": "L18"
     },
     {
+      "id": "package_dependencies_swiper",
+      "label": "swiper",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "swiper",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
       "id": "package_dependencies_tailwindcss",
       "label": "tailwindcss",
       "_origin": "ast",
@@ -1289,7 +1390,7 @@
       "file_type": "code",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "package_dependencies_tailwindcss_vite",
@@ -1348,6 +1449,66 @@
       "source_location": "L1"
     },
     {
+      "id": "handoff_about_tsx",
+      "label": "`About.tsx`",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`about.tsx`",
+      "source_file": "HANDOFF.md",
+      "source_location": "L99"
+    },
+    {
+      "id": "handoff_component_notes",
+      "label": "Component Notes",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "component notes",
+      "source_file": "HANDOFF.md",
+      "source_location": "L81"
+    },
+    {
+      "id": "handoff_contact_tsx",
+      "label": "`Contact.tsx`",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`contact.tsx`",
+      "source_file": "HANDOFF.md",
+      "source_location": "L120"
+    },
+    {
+      "id": "handoff_footer_tsx",
+      "label": "`Footer.tsx`",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`footer.tsx`",
+      "source_file": "HANDOFF.md",
+      "source_location": "L127"
+    },
+    {
+      "id": "handoff_hero_tsx",
+      "label": "`Hero.tsx`",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`hero.tsx`",
+      "source_file": "HANDOFF.md",
+      "source_location": "L83"
+    },
+    {
       "id": "handoff_how_to_reorient_quickly",
       "label": "How To Reorient Quickly",
       "_origin": "ast",
@@ -1381,7 +1542,19 @@
       "node_kind": "heading",
       "norm_label": "known constraints and gotchas",
       "source_file": "HANDOFF.md",
-      "source_location": "L145"
+      "source_location": "L143"
+    },
+    {
+      "id": "handoff_navigation_tsx",
+      "label": "`Navigation.tsx`",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`navigation.tsx`",
+      "source_file": "HANDOFF.md",
+      "source_location": "L92"
     },
     {
       "id": "handoff_portfolio_codebase_handoff",
@@ -1420,6 +1593,18 @@
       "source_location": "L38"
     },
     {
+      "id": "handoff_services_tsx",
+      "label": "`Services.tsx`",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`services.tsx`",
+      "source_file": "HANDOFF.md",
+      "source_location": "L113"
+    },
+    {
       "id": "handoff_stack",
       "label": "Stack",
       "_origin": "ast",
@@ -1453,7 +1638,19 @@
       "node_kind": "heading",
       "norm_label": "suggested next work",
       "source_file": "HANDOFF.md",
-      "source_location": "L156"
+      "source_location": "L154"
+    },
+    {
+      "id": "handoff_work_tsx",
+      "label": "`Work.tsx`",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Portfolio Codebase Handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`work.tsx`",
+      "source_file": "HANDOFF.md",
+      "source_location": "L106"
     },
     {
       "id": "src_index",
@@ -1464,6 +1661,54 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "src_index",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "src_data_navigationmenu",
+      "label": "src_data_navigationmenu",
+      "_origin": "semantic",
+      "community": 13,
+      "community_name": "src_data_navigationmenu",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "src_data_navigationmenu",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "src_data_navigationmenu_mobilemenucontent",
+      "label": "src_data_navigationmenu_mobilemenucontent",
+      "_origin": "semantic",
+      "community": 14,
+      "community_name": "src_data_navigationmenu_mobilemenucontent",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "src_data_navigationmenu_mobilemenucontent",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "src_data_navigationmenu_navitemid",
+      "label": "src_data_navigationmenu_navitemid",
+      "_origin": "semantic",
+      "community": 15,
+      "community_name": "src_data_navigationmenu_navitemid",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "src_data_navigationmenu_navitemid",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "src_data_navigationmenu_navitems",
+      "label": "src_data_navigationmenu_navitems",
+      "_origin": "semantic",
+      "community": 16,
+      "community_name": "src_data_navigationmenu_navitems",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "src_data_navigationmenu_navitems",
       "source_file": "",
       "type": "external"
     }
@@ -1554,6 +1799,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_contact_contact",
+      "target": "src_components_signalwave_signalwave",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/Contact.tsx",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_services_services",
+      "target": "src_components_services_servicepanel",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
       "source": "package",
       "target": "ref_tailwindcss_vite",
       "relation": "imports",
@@ -1603,7 +1872,7 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss",
+      "target": "ref_swiper",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1615,19 +1884,19 @@
     },
     {
       "source": "package",
-      "target": "ref_cup319_mmpl",
+      "target": "ref_tailwindcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
       "source": "package",
-      "target": "ref_types_node",
+      "target": "ref_cup319_mmpl",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1639,7 +1908,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react",
+      "target": "ref_types_node",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1651,7 +1920,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react_dom",
+      "target": "ref_types_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1663,7 +1932,7 @@
     },
     {
       "source": "package",
-      "target": "ref_vitejs_plugin_react",
+      "target": "ref_types_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1675,7 +1944,7 @@
     },
     {
       "source": "package",
-      "target": "ref_oxlint",
+      "target": "ref_vitejs_plugin_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1687,7 +1956,7 @@
     },
     {
       "source": "package",
-      "target": "ref_typescript",
+      "target": "ref_oxlint",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1699,7 +1968,7 @@
     },
     {
       "source": "package",
-      "target": "ref_vite",
+      "target": "ref_typescript",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1707,6 +1976,18 @@
       "context": "import",
       "source_file": "package.json",
       "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_vite",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -1791,6 +2072,90 @@
       "context": "import",
       "source_file": "src/App.tsx",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_contact",
+      "target": "src_components_signalwave_signalwave",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Contact.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_navigation",
+      "target": "src_config_navigationmenu_mobilemenucontent",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_navigation",
+      "target": "src_config_navigationmenu_navitems",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_navigation",
+      "target": "src_config_navigationmenu_navitemid",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_services",
+      "target": "src_config_services_service",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_services",
+      "target": "src_config_services_services",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_work",
+      "target": "src_config_work_portfoliocards",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Work.tsx",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -1902,6 +2267,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_contact",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Contact.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_contact",
+      "target": "src_components_signalwave",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Contact.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_hero",
       "target": "ref_react",
       "relation": "imports_from",
@@ -1910,6 +2299,104 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/Hero.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_navigation",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_navigation",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L3",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_navigation",
+      "target": "src_config_navigationmenu",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L5",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_services",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_services",
+      "target": "src_config_services",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_services",
+      "target": "ref_swiper",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_signalwave",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/SignalWave.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_work",
+      "target": "src_config_work",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/Work.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -2126,7 +2613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "HANDOFF.md",
-      "source_location": "L145",
+      "source_location": "L143",
       "weight": 1.0
     },
     {
@@ -2137,7 +2624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "HANDOFF.md",
-      "source_location": "L156",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -2291,7 +2778,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -2384,13 +2871,24 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_tailwindcss",
+      "target": "package_dependencies_swiper",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_tailwindcss",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -2401,7 +2899,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -2412,7 +2910,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -2423,7 +2921,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -2434,7 +2932,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -2445,7 +2943,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -2456,7 +2954,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -2467,7 +2965,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -2478,7 +2976,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -2610,7 +3108,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/Contact.tsx",
-      "source_location": "L1",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -2632,7 +3130,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L6",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_hero",
+      "target": "src_components_hero_ember_particles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -2643,7 +3152,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/Navigation.tsx",
-      "source_location": "L1",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_navigation",
+      "target": "src_components_navigation_pillrect",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -2654,7 +3174,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/Services.tsx",
-      "source_location": "L1",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_services",
+      "target": "src_components_services_servicepanel",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_signalwave",
+      "target": "src_components_signalwave_signalwave",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/SignalWave.tsx",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -2665,6 +3207,83 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/Work.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_navigationmenu",
+      "target": "src_config_navigationmenu_navitems",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/navigationMenu.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_navigationmenu",
+      "target": "src_config_navigationmenu_mobilemenucontent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/navigationMenu.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_navigationmenu",
+      "target": "src_config_navigationmenu_navitemid",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/navigationMenu.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_services",
+      "target": "src_config_services_serviceimage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/services.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_services",
+      "target": "src_config_services_services",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/services.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_services",
+      "target": "src_config_services_service",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/services.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_work",
+      "target": "src_config_work_portfoliocards",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/work.ts",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -3149,5 +3768,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "250c5cfbadd4c0f711e3c28804970da516336233"
+  "built_at_commit": "6c2b7bd84d207ce391c9614bc31f403ca0a9f583"
 }

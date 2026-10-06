@@ -61,7 +61,7 @@
       "file_type": "code",
       "norm_label": "hero()",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L6"
+      "source_location": "L7"
     },
     {
       "id": "src_components_navigation_navigation",
@@ -1478,7 +1478,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.tsx",
-      "source_location": "L15",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -1490,7 +1490,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.tsx",
-      "source_location": "L21",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -1502,7 +1502,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.tsx",
-      "source_location": "L27",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -1514,7 +1514,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.tsx",
-      "source_location": "L28",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -1526,7 +1526,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.tsx",
-      "source_location": "L29",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -1538,7 +1538,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.tsx",
-      "source_location": "L30",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -1550,7 +1550,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.tsx",
-      "source_location": "L31",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -2632,7 +2632,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -3149,5 +3149,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3e5f82ec922a0fd59c8c23bc17e87ee6cfe12956"
+  "built_at_commit": "5d0ecb7a8d73bc8ad5a2ad2149131a1639cc6904"
 }

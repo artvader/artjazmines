@@ -1,17 +1,17 @@
-# Graph Report - portfolio  (2026-10-04)
+# Graph Report - portfolio  (2026-10-06)
 
 ## Corpus Check
-- 18 files · ~583,389 words
+- 22 files · ~677,824 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 10 file(s) not represented in the graph (top: .woff2 6, (none) 2, .css 2)
 
 ## Summary
-- 130 nodes · 148 edges · 13 communities (11 shown, 2 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.95)
+- 151 nodes · 180 edges · 18 communities (12 shown, 6 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.95)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `250c5cfb`
+- Built from commit: `6c2b7bd8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -26,9 +26,10 @@
 - dependencies
 - tsconfig.json
 - Portfolio Codebase Handoff
-- Component Notes
+- Navigation.tsx
 - React + TypeScript + Vite
 - AGENTS.md
+- Services.tsx
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 18 edges
@@ -36,11 +37,11 @@
 3. `Portfolio Codebase Handoff` - 11 edges
 4. `App()` - 9 edges
 5. `Component Notes` - 8 edges
-6. `App Flow` - 7 edges
-7. `scripts` - 7 edges
-8. `About()` - 4 edges
-9. `Contact()` - 4 edges
-10. `Footer()` - 4 edges
+6. `scripts` - 7 edges
+7. `react` - 7 edges
+8. `App Flow` - 7 edges
+9. `Contact()` - 5 edges
+10. `Services()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `App Flow` --references--> `About()`  [INFERRED]
@@ -57,19 +58,19 @@
 ## Import Cycles
 - None detected.
 
-## Communities (13 total, 2 thin omitted)
+## Communities (18 total, 6 thin omitted)
 
 ### Community 0 - "App.tsx"
-Cohesion: 0.20
-Nodes (11): App Flow, react, react-dom, App(), About(), Contact(), Footer(), Hero() (+3 more)
+Cohesion: 0.17
+Nodes (14): App Flow, react, react-dom, App(), About(), Contact(), Footer(), EMBER_PARTICLES (+6 more)
 
 ### Community 1 - "compilerOptions"
 Cohesion: 0.10
 Nodes (19): compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib, module, moduleDetection (+11 more)
 
 ### Community 2 - "package.json"
-Cohesion: 0.13
-Nodes (15): name, private, type, version, @cup319/mmpl, lucide-react, oxlint, tailwindcss (+7 more)
+Cohesion: 0.14
+Nodes (14): name, private, type, version, @cup319/mmpl, oxlint, tailwindcss, @tailwindcss/vite (+6 more)
 
 ### Community 3 - "compilerOptions"
 Cohesion: 0.12
@@ -88,40 +89,44 @@ Cohesion: 0.33
 Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $schema
 
 ### Community 7 - "dependencies"
-Cohesion: 0.33
-Nodes (6): dependencies, lucide-react, react, react-dom, tailwindcss, @tailwindcss/vite
+Cohesion: 0.29
+Nodes (7): dependencies, lucide-react, react, react-dom, swiper, tailwindcss, @tailwindcss/vite
 
 ### Community 9 - "Portfolio Codebase Handoff"
-Cohesion: 0.20
-Nodes (9): How To Reorient Quickly, Important Commands, Known Constraints And Gotchas, Portfolio Codebase Handoff, Project Snapshot, Repository Shape, Stack, Styling And Assets (+1 more)
+Cohesion: 0.11
+Nodes (17): `About.tsx`, Component Notes, `Contact.tsx`, `Footer.tsx`, `Hero.tsx`, How To Reorient Quickly, Important Commands, Known Constraints And Gotchas (+9 more)
 
-### Community 10 - "Component Notes"
-Cohesion: 0.25
-Nodes (8): `About.tsx`, Component Notes, `Contact.tsx`, `Footer.tsx`, `Hero.tsx`, `Navigation.tsx`, `Services.tsx`, `Work.tsx`
+### Community 10 - "Navigation.tsx"
+Cohesion: 0.43
+Nodes (5): lucide-react, PillRect, mobileMenuContent, NavItemId, navItems
 
 ### Community 11 - "React + TypeScript + Vite"
 Cohesion: 0.50
 Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScript + Vite
 
+### Community 17 - "Services.tsx"
+Cohesion: 0.38
+Nodes (5): swiper, ServicePanel(), Service, ServiceImage, services
+
 ## Knowledge Gaps
-- **88 isolated node(s):** `allowArbitraryExtensions`, `allowImportingTsExtensions`, `erasableSyntaxOnly`, `jsx`, `lib` (+83 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 92 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **91 isolated node(s):** `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components`, `name` (+86 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 99 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react-dom` connect `App.tsx` to `package.json`?**
-  _High betweenness centrality (0.149) - this node is a cross-community bridge._
-- **Why does `Portfolio Codebase Handoff` connect `Portfolio Codebase Handoff` to `App.tsx`, `Component Notes`?**
-  _High betweenness centrality (0.137) - this node is a cross-community bridge._
+- **Why does `Portfolio Codebase Handoff` connect `Portfolio Codebase Handoff` to `App.tsx`?**
+  _High betweenness centrality (0.127) - this node is a cross-community bridge._
 - **Why does `App Flow` connect `App.tsx` to `Portfolio Codebase Handoff`?**
-  _High betweenness centrality (0.129) - this node is a cross-community bridge._
-- **What connects `allowArbitraryExtensions`, `allowImportingTsExtensions`, `erasableSyntaxOnly` to the rest of the system?**
-  _88 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.123) - this node is a cross-community bridge._
+- **Why does `react-dom` connect `App.tsx` to `package.json`?**
+  _High betweenness centrality (0.083) - this node is a cross-community bridge._
+- **What connects `$schema`, `plugins`, `react/rules-of-hooks` to the rest of the system?**
+  _91 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.1323529411764706 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.14166666666666666 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

@@ -9,7 +9,12 @@
   "7": "dependencies",
   "8": "tsconfig.json",
   "9": "Portfolio Codebase Handoff",
-  "10": "Component Notes",
+  "10": "Navigation.tsx",
   "11": "React + TypeScript + Vite",
-  "12": "AGENTS.md"
+  "12": "AGENTS.md",
+  "13": "src_data_navigationmenu",
+  "14": "src_data_navigationmenu_mobilemenucontent",
+  "15": "src_data_navigationmenu_navitemid",
+  "16": "src_data_navigationmenu_navitems",
+  "17": "Services.tsx"
 }

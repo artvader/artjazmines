@@ -56,7 +56,335 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
   background-color: var(--color-bg-page);
   color: var(--color-text-primary);
   overflow-x: hidden;
+}
+
+.services-mobile-swiper {
+  --services-mobile-peek: clamp(56px, 18vw, 80px);
+}
+
+.services-mobile-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.services-mobile-swiper .services-mobile-slide {
+  width: calc(100% - var(--services-mobile-peek));
+  height: auto;
+}
+
+@media (min-width: 48rem) {
+  .services-mobile-swiper {
+    display: none !important;
+  }
+}
+
+.logo-sprite {
+  display: block;
+  width: 160px;
+  height: 64px;
+  overflow: hidden;
+  background-image: url("/assets/images/logo-sprite.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 1600px 64px;
+  animation: logo-sprite-play 1s steps(9, end) infinite alternate;
+}
+
+.art-figure {
+  animation: art-figure-flicker 2.8s steps(1, end) infinite;
+}
+
+.contact-signal-wave {
+  display: block;
+  overflow: visible;
+  background: transparent;
+}
+
+.message-integrity-fill {
+  width: var(--integrity-base);
+  animation: message-integrity-fluctuation 1.2s ease-in-out infinite;
+}
+
+@keyframes message-integrity-fluctuation {
+  0%, 100% { width: var(--integrity-base); }
+  25% { width: clamp(0%, calc(var(--integrity-base) + 4%), 100%); }
+  75% { width: clamp(0%, calc(var(--integrity-base) - 4%), 100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .message-integrity-fill { animation: none; }
+}
+
+.contact-signal-edge {
+  stroke: rgb(var(--color-surface-muted-rgb) / 0.42);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+}
+
+.contact-signal-path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+  stroke-dasharray: 96 36;
+  animation: contact-signal-flow 2.8s linear infinite;
+}
+
+.contact-signal-path-amber {
+  stroke: rgb(255 209 102 / 0.88);
+  animation:
+    contact-signal-flow 2.35s steps(9, end) infinite,
+    contact-signal-jitter-a 1.55s steps(5, end) infinite;
+}
+
+.contact-signal-path-cyan {
+  stroke: rgb(37 214 255 / 0.78);
+  stroke-dasharray: 54 31 12 26;
+  animation:
+    contact-signal-flow-reverse 3.1s steps(11, end) infinite,
+    contact-signal-jitter-b 1.9s steps(6, end) infinite;
+}
+
+.contact-signal-path-magenta {
+  stroke: rgb(255 64 218 / 0.68);
+  stroke-width: 1.2;
+  stroke-dasharray: 72 52;
+  animation:
+    contact-signal-flow 2.75s steps(7, end) infinite,
+    contact-signal-jitter-c 1.25s steps(4, end) infinite;
+}
+
+.contact-signal-path-core {
+  stroke: rgb(var(--color-text-primary-rgb) / 0.82);
+  stroke-width: 0.7;
+  stroke-dasharray: 28 18;
+  animation:
+    contact-signal-flow 1.2s steps(8, end) infinite,
+    contact-signal-jitter-core 0.9s steps(5, end) infinite;
+}
+
+.ember-field {
+  mix-blend-mode: screen;
+}
+
+.ember-particle {
+  position: absolute;
+  left: var(--ember-left);
+  bottom: -24px;
+  width: var(--ember-size);
+  height: var(--ember-size);
+  border-radius: 9999px;
+  background:
+    radial-gradient(circle, var(--color-amber-300) 0 18%, rgb(var(--color-glow-orange-rgb) / 0.9) 42%, transparent 72%);
+  box-shadow:
+    0 0 10px rgb(var(--color-glow-orange-rgb) / 0.8),
+    0 0 22px rgb(var(--color-glow-orange-rgb) / 0.36);
+  opacity: 0;
+  transform: translate3d(0, 0, 0) scale(0.72);
+  animation: ember-rise var(--ember-duration) linear var(--ember-delay) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ember-particle {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+@keyframes logo-sprite-play {
+  to {
+    background-position: -1440px 0;
+  }
+}
+
+@keyframes ember-rise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.6);
+  }
+
+  12% {
+    opacity: 0.8;
+  }
+
+  68% {
+    opacity: 0.46;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--ember-drift), -620px, 0) scale(1.22);
+  }
+}
+
+@keyframes contact-signal-flow {
+  to {
+    stroke-dashoffset: -132;
+  }
+}
+
+@keyframes contact-signal-flow-reverse {
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+
+@keyframes contact-signal-jitter-a {
+  0% {
+    opacity: 0.38;
+  }
+
+  18% {
+    opacity: 0.92;
+  }
+
+  39% {
+    opacity: 0.55;
+  }
+
+  63% {
+    opacity: 1;
+  }
+
+  81% {
+    opacity: 0.46;
+  }
+
+  100% {
+    opacity: 0.74;
+  }
+}
+
+@keyframes contact-signal-jitter-b {
+  0% {
+    opacity: 0.78;
+  }
+
+  21% {
+    opacity: 0.34;
+  }
+
+  43% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.5;
+  }
+
+  76% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.62;
+  }
+}
+
+@keyframes contact-signal-jitter-c {
+  0% {
+    opacity: 0.46;
+  }
+
+  27% {
+    opacity: 0.85;
+  }
+
+  52% {
+    opacity: 0.28;
+  }
+
+  69% {
+    opacity: 0.96;
+  }
+
+  100% {
+    opacity: 0.58;
+  }
+}
+
+@keyframes contact-signal-jitter-core {
+  0% {
+    opacity: 0.72;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  47% {
+    opacity: 0.42;
+  }
+
+  71% {
+    opacity: 0.88;
+  }
+
+  100% {
+    opacity: 0.66;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-signal-path {
+    animation: none;
+  }
+}
+
+@keyframes art-figure-flicker {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  6% {
+    opacity: 0.31;
+  }
+
+  9% {
+    opacity: 0.55;
+  }
+
+  14% {
+    opacity: 0.25;
+  }
+
+  16% {
+    opacity: 0.62;
+  }
+
+  29% {
+    opacity: 0.42;
+  }
+
+  34% {
+    opacity: 0.58;
+  }
+
+  47% {
+    opacity: 0.28;
+  }
+
+  51% {
+    opacity: 0.66;
+  }
+
+  63% {
+    opacity: 0.36;
+  }
+
+  71% {
+    opacity: 0.6;
+  }
+
+  86% {
+    opacity: 0.33;
+  }
+
+  91% {
+    opacity: 0.52;
+  }
 }
