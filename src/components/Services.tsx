@@ -13,20 +13,31 @@ function ServicePanel({
   return (
     <div
       id={panelId}
-      className="services relative h-full min-w-0 flex-1 overflow-hidden "
+      className="services relative h-full min-w-0 flex-1 overflow-hidden"
       style={{ backgroundColor: service.panelColor }}
     >
-      <p className="absolute bottom-4 left-6 z-10 max-w-sm pr-4 text-sm font-normal text-[var(--color-text-primary)] opacity-60">
-        {service.description}
-      </p>
-      {service.images?.map((image) => (
-        <img
-          key={image.src}
-          className={image.className}
-          src={image.src}
-          alt={image.alt}
-        />
-      ))}
+      <div className="grid h-full grid-cols-1 content-between gap-6 p-6 md:grid-cols-[minmax(160px,0.8fr)_minmax(220px,1.2fr)] md:items-center md:p-8">
+        <div className="relative z-10 flex max-w-[260px] flex-col items-start">
+          <div className="mb-5 grid h-24 w-24 place-items-center overflow-hidden bg-[rgb(var(--color-bg-page-rgb)_/_0.22)] ring-1 ring-[rgb(var(--color-text-primary-rgb)_/_0.12)] md:h-28 md:w-28">
+            <img
+              className="max-h-[76%] max-w-[76%] object-contain opacity-80 [mix-blend-mode:screen]"
+              src={service.iconSrc}
+              alt={service.iconAlt}
+            />
+          </div>
+          <p className="max-w-[28ch] text-sm font-normal leading-6 text-[var(--color-text-primary)] opacity-68">
+            {service.description}
+          </p>
+        </div>
+
+        <div className="relative z-0 flex min-h-0 items-center justify-center md:h-full">
+          <img
+            className="max-h-[180px] w-full max-w-[360px] object-contain opacity-88 shadow-[0_24px_46px_-32px_rgb(var(--color-shadow-rgb)_/_0.78)] md:max-h-[270px]"
+            src={service.placeholderSrc}
+            alt={service.placeholderAlt}
+          />
+        </div>
+      </div>
     </div>
   );
 }
@@ -37,7 +48,7 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="Services relative flex shrink-0 self-stretch flex-col items-start gap-6 bg-[var(--color-bg-page)]  py-0 scroll-mt-[104px] pb-6"
+      className="Services relative flex shrink-0 self-stretch flex-col items-start gap-6 bg-[var(--color-bg-page)]  scroll-mt-[104px] pb-20"
     >
       <div className="relative mx-auto w-full max-w-5xl px-6">
         <div className="mb-3 h-24 shrink-0">
@@ -52,7 +63,7 @@ export default function Services() {
         </div>
 
         <Swiper
-          className="services-mobile-swiper h-[400px] w-full overflow-visible md:hidden"
+          className="services-mobile-swiper  w-full overflow-visible md:hidden"
           slidesPerView="auto"
           spaceBetween={0}
           loop

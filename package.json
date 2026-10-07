@@ -12,6 +12,7 @@
     "mepalace": "set PORT=7681&& mmpl"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@tailwindcss/vite": "^4.3.3",
     "lucide-react": "^1.50.0",
     "react": "^19.2.8",

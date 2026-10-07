@@ -146,7 +146,7 @@ export default function Navigation() {
   }, [isMenuOpen]);
 
   return (
-    <header className="Navigation fixed left-0 top-0 pt-3 md:pt-3 pb-6 w-full flex items-center z-10">
+    <header className="Navigation fixed left-0 top-0 pt-3 md:pt-3 pb-6 w-full flex items-center z-50">
       <span
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 backdrop-blur-sm [mask-image:linear-gradient(to_bottom,black_0%,black_35%,transparent_100%)]"

@@ -2,7 +2,7 @@ import { portfolioCards } from "../config/work";
 
 export default function Work() {
   return (
-    <div className="Works bg-[var(--color-bg-page)] relative pb-6">
+    <div className="Works bg-[var(--color-bg-page)] relative pb-20">
       {/* Vaulted Works / Portfolio Cards */}
       <div
         id="portfolio"

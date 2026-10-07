@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="About relative flex w-full flex-col items-center [background:linear-gradient(180deg,_rgb(var(--color-bg-page-rgb)_/_0)_0,_var(--color-bg-page)_100px)] pt-40 pb-6">
+    <div className="About relative flex w-full flex-col items-center [background:linear-gradient(180deg,_rgb(var(--color-bg-page-rgb)_/_0)_0,_var(--color-bg-page)_100px)] pt-40 pb-20">
       {/* Identity & Coordinates */}
 
       <div className=" w-full max-w-5xl mx-auto ">
