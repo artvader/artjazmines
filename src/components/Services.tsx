@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { services, type Service } from "../config/services";
+import ViewportHeader from "./ViewportHeader";
 import "swiper/css";
 
 function ServicePanel({
@@ -52,14 +53,17 @@ export default function Services() {
     >
       <div className="relative mx-auto w-full max-w-5xl px-6">
         <div className="mb-3 h-24 shrink-0">
-          <p className="[text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)]">
+          <ViewportHeader
+            echo="FABRICATION TYPES"
+            className="[text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)]"
+          >
             FABRICATION
             <br />
             <span className="text-[var(--color-text-accent)]">TYPES</span>
             <span className="opacity-30 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
               SERVICES OFFERED
             </span>
-          </p>
+          </ViewportHeader>
         </div>
 
         <Swiper

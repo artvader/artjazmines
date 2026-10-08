@@ -1,4 +1,5 @@
 import { portfolioCards } from "../config/work";
+import ViewportHeader from "./ViewportHeader";
 
 export default function Work() {
   return (
@@ -9,14 +10,17 @@ export default function Work() {
         className=" shrink-0 max-w-5xl mx-auto flex items-center flex-wrap content-center w-full gap-4 py-0 px-6 scroll-mt-[104px]"
       >
         <div className="shrink-0 max-w-5xl mx-auto h-24 relative basis-full">
-          <p className="max-w-5xl [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)]">
+          <ViewportHeader
+            echo="VAULTED WORKS"
+            className="max-w-5xl [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)]"
+          >
             VAULTED
             <br />
             <span className="text-[var(--color-text-accent)]">WORKS</span>
             <span className="inline-block -translate-y-7 h-[38px] opacity-30 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)] pb-6">
               PORTFOLIO
             </span>
-          </p>
+          </ViewportHeader>
         </div>
         <div className="folio-cards flex flex-wrap gap-3 mb-4">
           {portfolioCards.map((card) => (
@@ -47,9 +51,12 @@ export default function Work() {
         id="works"
         className="flex flex-wrap content-start px-6 max-w-5xl mx-auto shrink-0 items-start gap-2.5 py-0 px-6 scroll-mt-[104px]"
       >
-        <p className="basis-full shrink-0 self-start opacity-80 [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:40px] font-normal leading-none tracking-normal text-[var(--color-text-heading)]">
+        <ViewportHeader
+          echo="ADDITIONAL FABRICATIONS"
+          className="basis-full shrink-0 self-start opacity-80 [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:40px] font-normal leading-none tracking-normal text-[var(--color-text-heading)]"
+        >
           ADDITIONAL FABRICATIONS
-        </p>
+        </ViewportHeader>
         <div className=" flex items-center gap-4">
           <div>
           <img

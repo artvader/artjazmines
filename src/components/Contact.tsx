@@ -7,6 +7,7 @@ import {
   type FormEvent,
 } from "react";
 import SignalWave from "./SignalWave";
+import ViewportHeader from "./ViewportHeader";
 
 const ROUTING_FILL_DURATION_MS = 1500;
 const FORMSPREE_FORM_ID = "meaeelvj";
@@ -104,14 +105,17 @@ export default function Contact() {
       className="Contact relative bg-[var(--color-bg-page)] scroll-mt-[104px]"
     >
       <div className="h-24 max-w-5xl mx-auto px-6">
-        <p className="[text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)] whitespace-nowrap">
+        <ViewportHeader
+          echo="COMMUNICATIONS CHANNELS"
+          className="[text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:58px] font-normal leading-[48px] tracking-[1px] text-[var(--color-text-heading)] whitespace-nowrap"
+        >
           COMMUNICATIONS
           <span className="text-[var(--color-text-primary)]">
             {" "}
             <br />
           </span>
           <span className="text-[var(--color-text-accent)]">CHANNELS</span>
-        </p>
+        </ViewportHeader>
         <p className=" left-[219px] top-[52px] w-[1232px] h-[38px] opacity-80 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
           CONTACT FORM
         </p>

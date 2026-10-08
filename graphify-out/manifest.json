@@ -18,15 +18,15 @@
     "semantic_hash": ""
   },
   "src/components/About.tsx": {
-    "mtime": 1791301980.1330183,
-    "seen": 1791363663.6719391,
-    "ast_hash": "4607480b52a5fcc288a263ea804072eb",
+    "mtime": 1791443982.360814,
+    "seen": 1791444074.4587452,
+    "ast_hash": "c9c351ebf3c0e087840a98218567316f",
     "semantic_hash": ""
   },
   "src/components/Contact.tsx": {
-    "mtime": 1791365888.5665948,
-    "seen": 1791365925.3314314,
-    "ast_hash": "04a19ebef32e6420fd14af1347d6d276",
+    "mtime": 1791444003.9513285,
+    "seen": 1791444074.45875,
+    "ast_hash": "79fb0766e23302d718a9990ffae9b242",
     "semantic_hash": ""
   },
   "src/components/Footer.tsx": {
@@ -48,15 +48,15 @@
     "semantic_hash": ""
   },
   "src/components/Services.tsx": {
-    "mtime": 1791364636.0737233,
-    "seen": 1791365014.2020738,
-    "ast_hash": "4e98764773cdc3f6267ac1a5ff3f00a9",
+    "mtime": 1791443998.1046326,
+    "seen": 1791444074.458761,
+    "ast_hash": "3ab4746d885be9eb086a848a721081bd",
     "semantic_hash": ""
   },
   "src/components/Work.tsx": {
-    "mtime": 1791364254.0796578,
-    "seen": 1791364605.167168,
-    "ast_hash": "023cec0fd1332141f6b612916f0a3263",
+    "mtime": 1791443991.1322653,
+    "seen": 1791444074.4587703,
+    "ast_hash": "38b82d262f4f20b0b63308e8bbaabaa8",
     "semantic_hash": ""
   },
   "src/main.tsx": {
@@ -2763,6 +2763,12 @@
     "mtime": 1791364507.3519018,
     "seen": 1791364605.1674101,
     "ast_hash": "8578d09fa3659edcdc51e993bb46dd8b",
+    "semantic_hash": ""
+  },
+  "src/components/ViewportHeader.tsx": {
+    "mtime": 1791444029.3363197,
+    "seen": 1791444074.4587667,
+    "ast_hash": "837e01085f0ef070d76810e3d463b927",
     "semantic_hash": ""
   }
 }

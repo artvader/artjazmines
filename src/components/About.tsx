@@ -1,3 +1,5 @@
+import ViewportHeader from "./ViewportHeader";
+
 export default function About() {
   return (
     <div className="About relative flex w-full flex-col items-center [background:linear-gradient(180deg,_rgb(var(--color-bg-page-rgb)_/_0)_0,_var(--color-bg-page)_100px)] pt-40 pb-20">
@@ -8,14 +10,17 @@ export default function About() {
         id="about"
         className="shrink-0 self-stretch max-w-5xl flex flex-col justify-center items-center py-0 px-6 relative scroll-mt-[104px]"
       >
-        <p className="shrink-0 self-stretch [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:38px]  md:text-[length:58px] font-normal leading-[30px] md:leading-[48px] tracking-[1px] text-[var(--color-text-accent)]">
+        <ViewportHeader
+          echo="the HUMAN ELEMENT"
+          className="shrink-0 self-stretch [text-shadow:0_4px_4px_rgb(var(--color-shadow-rgb)_/_0.47)] font-['Koulen',_sans-serif] text-[length:38px]  md:text-[length:58px] font-normal leading-[30px] md:leading-[48px] tracking-[1px] text-[var(--color-text-accent)]"
+        >
           <span className="text-[var(--color-text-heading)]">the</span>
           <span className="text-[var(--color-text-primary)]">
             {" "}
             <br />
           </span>
           HUMAN ELEMENT
-        </p>
+        </ViewportHeader>
         <p className="shrink-0  self-stretch opacity-30 font-['Lekton',_sans-serif] text-[length:10px] md:text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
           COORD // N25.0330 / E121.5654 / TPE
         </p>
