@@ -116,7 +116,7 @@ export default function Contact() {
           </span>
           <span className="text-[var(--color-text-accent)]">CHANNELS</span>
         </ViewportHeader>
-        <p className=" left-[219px] top-[52px] w-[1232px] h-[38px] opacity-80 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
+        <p className=" left-[219px] top-[52px] w-[1232px] h-[38px] opacity-80 text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
           CONTACT FORM
         </p>
       </div>

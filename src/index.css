@@ -1,12 +1,48 @@
 @import "tailwindcss";
 
+.work-artwork {
+  background-color: var(--color-bg-page);
+  background-image:
+    linear-gradient(rgb(var(--color-bg-page-rgb) / 0.45), rgb(var(--color-bg-page-rgb) / 0.45)),
+    var(--work-artwork-background, url("/assets/images/bg-piston.png"));
+  background-blend-mode: normal, luminosity;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 40px 14px rgb(var(--color-shadow-rgb) / 0.75);
+}
+
+.folio-card:nth-child(2) .work-artwork {
+  --work-artwork-background: url("/assets/images/bg-piston-2.png");
+}
+
+.folio-card:nth-child(3) .work-artwork {
+  --work-artwork-background: url("/assets/images/bg-piston-3.png");
+}
+
+.work-artwork-crop {
+  transform: translate(8%, 8%) rotate(-8deg);
+  transition: transform 500ms ease;
+}
+
+.group:hover .work-artwork-crop,
+.group:focus-visible .work-artwork-crop {
+  transform: translate(5%, 4%) rotate(-5deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-artwork-crop {
+    transition: none;
+  }
+}
+
 :root {
   --color-neutral-0: #ffffff;
   --color-neutral-0-rgb: 255 255 255;
   --color-neutral-100: #d9d9d9;
   --color-neutral-200: #d8e2ea;
-  --color-neutral-300: #c3b9b9;
-  --color-neutral-300-rgb: 195 185 185;
+  --color-neutral-300: #ff9fc6;
+  --color-neutral-300-rgb: 255 159 198;
   --color-neutral-950-rgb: 0 0 0;
   --color-ember-950: #290c01;
   --color-ember-950-rgb: 41 12 1;
@@ -14,13 +50,13 @@
   --color-amber-300: #ffd166;
   --color-slate-900: #161e2b;
   --color-steel-900-rgb: 19 31 48;
-  --color-olive-600: #607a44;
-  --color-olive-600-rgb: 96 122 68;
-  --color-olive-500: #6e8c4e;
-  --color-plum-600: #7a445b;
-  --color-plum-600-rgb: 122 68 91;
-  --color-brass-600: #7a6944;
-  --color-brass-600-rgb: 122 105 68;
+  --color-olive-600: #93e21f;
+  --color-olive-600-rgb: 147 226 31;
+  --color-olive-500: #b4ff35;
+  --color-plum-600: #f02b8e;
+  --color-plum-600-rgb: 240 43 142;
+  --color-brass-600: #f6b915;
+  --color-brass-600-rgb: 246 185 21;
   --color-glow-orange-rgb: 242 127 13;
 
   --color-bg-page: var(--color-ember-950);
@@ -38,12 +74,16 @@
   --color-shadow-accent-rgb: var(--color-glow-orange-rgb);
   --color-service-web: var(--color-neutral-300);
   --color-service-web-rgb: var(--color-neutral-300-rgb);
+  --gradient-service-web: linear-gradient(90deg, #ff7ab6 0%, #ffd6e7 46%, #b86cff 100%);
   --color-service-print: var(--color-olive-600);
   --color-service-print-rgb: var(--color-olive-600-rgb);
+  --gradient-service-print: linear-gradient(90deg, #68ff2e 0%, #b4ff35 50%, #f7ff5a 100%);
   --color-service-brand: var(--color-plum-600);
   --color-service-brand-rgb: var(--color-plum-600-rgb);
+  --gradient-service-brand: linear-gradient(90deg, #ff2a9d 0%, #f02b8e 45%, #ff6b3d 100%);
   --color-service-prototype: var(--color-brass-600);
   --color-service-prototype-rgb: var(--color-brass-600-rgb);
+  --gradient-service-prototype: linear-gradient(90deg, #ff8a1f 0%, #f6b915 50%, #ffe95c 100%);
   --color-action-primary: var(--color-olive-600);
   --color-action-primary-hover: var(--color-olive-500);
   --labels-vibrant-quaternary: #d9d9d9;
@@ -224,6 +264,60 @@ body::before {
 @media (min-width: 48rem) {
   .services-mobile-swiper {
     display: none !important;
+  }
+}
+
+.services-matrix-preview-grid {
+  background-image:
+    linear-gradient(rgb(var(--color-text-primary-rgb) / 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--color-text-primary-rgb) / 0.1) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(90deg, transparent, #000 16%, #000 88%, transparent);
+}
+
+.services-matrix-scan {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgb(var(--color-text-primary-rgb) / 0.14) 0,
+    rgb(var(--color-text-primary-rgb) / 0.14) 1px,
+    transparent 1px,
+    transparent 7px
+  );
+  mix-blend-mode: screen;
+}
+
+.portfolio-dialog {
+  animation: portfolio-dialog-fade 0.24s ease both;
+}
+
+.portfolio-dialog-stage {
+  animation: portfolio-stage-settle 0.52s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes portfolio-dialog-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes portfolio-stage-settle {
+  from {
+    transform: scale(0.985);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-dialog,
+  .portfolio-dialog-stage {
+    animation: none;
   }
 }
 

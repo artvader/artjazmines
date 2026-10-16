@@ -13,10 +13,10 @@ export const mobileMenuContent = {
     author: "Alina Wheeler",
   },
   featuredWork: {
-    title: "Trilite RMS Board",
+    title: "LAPR+",
     eyebrow: "Featured Work",
-    imageSrc: "/assets/images/mask-group-2.png",
-    imageAlt: "Trilite RMS Board website thumbnail",
+    imageSrc: "/assets/images/lapr-plus-homepage.png",
+    imageAlt: "LAPR+ website homepage screenshot",
     href: "#portfolio",
   },
 } as const;

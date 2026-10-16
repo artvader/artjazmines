@@ -2,6 +2,7 @@ export type Service = {
   id: "web" | "print" | "brand" | "prototype";
   title: string;
   color: string;
+  gradient: string;
   panelColor: string;
   tabTextColor: string;
   description: string;
@@ -18,6 +19,7 @@ export const services: Service[] = [
     id: "web",
     title: "WEB DESIGN",
     color: "var(--color-service-web)",
+    gradient: "var(--gradient-service-web)",
     panelColor: "rgb(var(--color-service-web-rgb) / 0.3)",
     tabTextColor: "rgb(var(--color-text-dark-rgb) / 0.8)",
     description:
@@ -31,6 +33,7 @@ export const services: Service[] = [
     id: "print",
     title: "PRINT DESIGN",
     color: "var(--color-service-print)",
+    gradient: "var(--gradient-service-print)",
     panelColor: "rgb(var(--color-service-print-rgb) / 0.3)",
     tabTextColor: "rgb(var(--color-text-primary-rgb) / 0.8)",
     description:
@@ -44,6 +47,7 @@ export const services: Service[] = [
     id: "brand",
     title: "BRANDING",
     color: "var(--color-service-brand)",
+    gradient: "var(--gradient-service-brand)",
     panelColor: "rgb(var(--color-service-brand-rgb) / 0.3)",
     tabTextColor: "rgb(var(--color-text-primary-rgb) / 0.7)",
     description:
@@ -57,6 +61,7 @@ export const services: Service[] = [
     id: "prototype",
     title: "PROTOTYPING",
     color: "var(--color-service-prototype)",
+    gradient: "var(--gradient-service-prototype)",
     panelColor: "rgb(var(--color-service-prototype-rgb) / 0.3)",
     tabTextColor: "rgb(var(--color-text-primary-rgb) / 0.7)",
     description:

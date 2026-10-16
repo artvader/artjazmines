@@ -10,3 +10,10 @@ Rules:
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+
+## frontend preferences
+
+- Use Lekton only for decorative flavor text (such as system readouts, section eyebrows, atmospheric labels, service deliverable labels, and service workflow labels like Audit / Wire / Compose / Ship). Use Koulen for display headings and Lato for body copy, project titles, navigation, controls, links, captions, and other functional text.
+- Avoid absolute positioning for UI elements unless it is truly necessary. Prefer flexbox or grid alignment first; use absolute positioning only when normal layout cannot achieve the effect cleanly.
+- Keep component structure lean. Minimize nested elements when designing or refactoring UI.
+- Prefer native Tailwind scale utilities over arbitrary values when practical, such as `text-sm` instead of `text-[length:14px]`, while preserving intentional custom values only when the design requires them.
