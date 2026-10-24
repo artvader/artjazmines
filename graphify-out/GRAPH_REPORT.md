@@ -1,7 +1,7 @@
 # Graph Report - portfolio  (2026-10-25)
 
 ## Corpus Check
-- 410 files · ~2,419,549 words
+- 410 files · ~2,419,550 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 29 file(s) not represented in the graph (top: (none) 9, .woff2 6, .toml 4)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `40f52f66`
+- Built from commit: `d1e3019f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -206,7 +206,7 @@
 - animate.md
 - createLiveBrowserDomHelpers
 - properties
-- G1BindingReachesNodeTest
+- re
 - SkinBinding
 - CharacterRigDerivation
 - build_morph_set
@@ -269,7 +269,7 @@
 - GLB_ANIMATED_CHARACTER_PROMPT.md
 - 5. Track B - Character / figurine reconstruction (v1.2.0)
 - delight_albedo.py
-- SpecLevelGate
+- G1BindingReachesNodeTest
 - write_rgb_png
 - sdf_primitives.py
 - otsu_threshold
@@ -302,7 +302,7 @@
 - SdfResolutionCapTest
 - assert_replay_matches_oracle
 - ._accepted_walk
-- Responsive Design
+- SpecLevelGate
 - Impeccable Asset Producer
 - TheDispatcherActuallyReachesThem
 - RigDomainProfile
@@ -317,7 +317,7 @@
 - 11. COMPONENT EXECUTION GUIDELINES
 - 18. EXTRA CREATIVITY & IMPLEMENTATION EDGE
 - kind
-- _BitReader
+- Responsive Design
 - document.md
 - RigSpec
 - Self-Correction Loop Reference
@@ -334,13 +334,13 @@
 - 9. AI TELLS (Forbidden Patterns)
 - 12. THE COMBINATORIAL VARIATION ENGINE
 - 8. ANTI-AI-SLOP RULES
-- diverging_joints
+- _BitReader
 - requiredSemanticRegions
-- CameraInitialization
+- Normalized spec-record vocabulary
 - bake_projected_texture.py
 - Any
 - Impeccable Finish Reviewer
-- test_fit_params.py
+- diverging_joints
 - PathEscapesMirrorsTheHarness
 - Naming
 - compare_views
@@ -352,7 +352,7 @@
 - SweepWindingFacesOutward
 - feature_gate_failures
 - qt
-- Normalized spec-record vocabulary
+- test_fit_params.py
 - 3D Graphics Terminology For Object Sculpt Specs
 - Lab experiment 1 — three intake steps as plugin rows
 - Android platform
@@ -377,7 +377,7 @@
 - test_pass_identifier_authority.py
 - PerFeatureTests
 - k
-- re
+- emit_status
 - Character Reconstruction
 - Pre-Spec Assessment And Quality Contract
 - Action-Ready Procedural Models
@@ -393,8 +393,8 @@
 - divine_eye.py
 - field_from_component
 - CalibrateEyeTest
-- Off-axis and placement gates
-- emit_status
+- CameraInitialization
+- EstimateErrsSafely
 - UI Critique — Art Jazmines Portfolio (`src/`)
 - GLB animated-character prompt
 - color_is_gated
@@ -402,7 +402,7 @@
 - compare_views.mjs
 - Surface Topology Classification
 - decimate_ratio
-- EstimateErrsSafely
+- Off-axis and placement gates
 - GLB character pipeline (opt-in)
 - normalise_rings
 - Visualize: Direction Comps & Asset Production
@@ -423,7 +423,7 @@
 - pull_request_template.md
 - Procedural rigging contract — 1.5-alpha
 - 4. Three.js design recipe
-- Impeccable Documenter
+- 8. DARK MODE PROTOCOL
 - emit_surface_module.mjs
 - enableInlineEdit
 - 33. DEFAULT SECTION PACKS
@@ -445,7 +445,7 @@
 - Heuristics Scoring Guide
 - Navigation.tsx
 - imagegen-frontend-web/SKILL.md
-- 8. DARK MODE PROTOCOL
+- _fit_divine_eye.py
 - extract_pbr_evidence.py
 - Region map
 - GLB-reference character prompt — build
@@ -453,24 +453,24 @@
 - RealReferenceViews
 - reference_target
 - Stage R5 — Runtime assembly
-- _fit_divine_eye.py
+- _binding
 - Stage R2 — Skin conditioning
 - UnsupportedInterpolation
-- _binding
+- Left and right
 - .test_g7_catches_a_mirrored_rig
 - character_audit.sh
-- Left and right
+- Impeccable Documenter
 - local_spec_search.md
 - vision/README.md
 - img2threejs-glb-character-pipeline
 - img2threejs-vision
-- JpegPortabilityTest
 - [1.2.0] - 2026-07-21
+- ComponentLevelRejection
 - SweepCoverage
 - LoopDecision
 - SrgbToLabTest
-- ComponentLevelRejection
 - Command guidance
+- JpegPortabilityTest
 - EmittedFactory
 
 ## God Nodes (most connected - your core abstractions)
@@ -1246,6 +1246,10 @@ Nodes (10): createLiveBrowserDomHelpers(), cssId(), liveUiRoot(), makeFrozenAnch
 Cohesion: 0.13
 Nodes (15): const, minItems, type, minItems, type, properties, authority, feedbackGroups (+7 more)
 
+### Community 194 - "re"
+Cohesion: 0.21
+Nodes (6): collect_local_feature_keys(), find_inventory(), load(), main(), norm(), severity_for()
+
 ### Community 195 - "SkinBinding"
 Cohesion: 0.15
 Nodes (7): Module map — one owner per file, no cross-writes, BlendReport, main(), SkinBinding, validate_binding(), GateR2, WriteAfterAllReads
@@ -1542,10 +1546,6 @@ Nodes (3): EmittedSourceTypechecks, fixture_spec(), GradientEmission
 Cohesion: 0.25
 Nodes (3): assert_replay_matches_oracle(), _oracle_is_not_degenerate(), ReferenceTargetOracleReplay
 
-### Community 290 - "Responsive Design"
-Cohesion: 0.20
-Nodes (10): Breakpoints: Content-Driven, Detect Input Method, Not Just Screen Size, Layout Adaptation Patterns, Mobile-First: Write It Right, Picture Element for Art Direction, Responsive Design, Responsive Images: Get It Right, Safe Areas: Handle the Notch (+2 more)
-
 ### Community 291 - "Impeccable Asset Producer"
 Cohesion: 0.14
 Nodes (11): Act on the receipt, Assemble and review, Plan and asset review, Plan, capture, serve, Core Rule, Decision Comps, Impeccable Asset Producer, Input Contract (+3 more)
@@ -1589,6 +1589,10 @@ Nodes (9): 18. EXTRA CREATIVITY & IMPLEMENTATION EDGE, Composition variety check
 ### Community 304 - "kind"
 Cohesion: 0.22
 Nodes (9): additionalProperties, properties, required, type, const, enum, type, background (+1 more)
+
+### Community 305 - "Responsive Design"
+Cohesion: 0.20
+Nodes (10): Breakpoints: Content-Driven, Detect Input Method, Not Just Screen Size, Layout Adaptation Patterns, Mobile-First: Write It Right, Picture Element for Art Direction, Responsive Design, Responsive Images: Get It Right, Safe Areas: Handle the Notch (+2 more)
 
 ### Community 306 - "document.md"
 Cohesion: 0.18
@@ -1646,13 +1650,13 @@ Nodes (8): 12. THE COMBINATORIAL VARIATION ENGINE, Background Character, Hero Ar
 Cohesion: 0.25
 Nodes (8): 8. ANTI-AI-SLOP RULES, Carousel / marquee slop (layout), Content slop, Data / KPI slop, Density slop, Layout slop, Typography slop, Visual slop
 
-### Community 322 - "diverging_joints"
-Cohesion: 0.22
-Nodes (3): diverging_joints(), identity(), WeldingWasNotEnough
-
 ### Community 323 - "requiredSemanticRegions"
 Cohesion: 0.25
 Nodes (8): additionalProperties, properties, type, extensions, requiredSemanticRegions, minItems, type, uniqueItems
+
+### Community 324 - "Normalized spec-record vocabulary"
+Cohesion: 0.29
+Nodes (4): Canonical row, Future ingestion seam, Normalized spec-record vocabulary, Required fields and stable types
 
 ### Community 325 - "bake_projected_texture.py"
 Cohesion: 0.36
@@ -1666,9 +1670,9 @@ Nodes (10): 5. Stage separation, _bone_position(), BoneMatch, Correspondence, Gl
 Cohesion: 0.25
 Nodes (6): Checks, in order, Disposition, Impeccable Finish Reviewer, Input Contract, Output Contract, Verdict Pass
 
-### Community 328 - "test_fit_params.py"
-Cohesion: 0.25
-Nodes (3): DivineEyeFitResult, _finite_score(), NonFiniteScoreError
+### Community 328 - "diverging_joints"
+Cohesion: 0.22
+Nodes (3): diverging_joints(), identity(), WeldingWasNotEnough
 
 ### Community 335 - "multi_pass.py"
 Cohesion: 0.46
@@ -1682,9 +1686,9 @@ Nodes (5): feature_gate_failures(), feature_review_policy(), feature_targets_for
 Cohesion: 0.32
 Nodes (8): 5. Parameter contract, Ie(), Lt(), oe(), qt(), Re(), we(), z()
 
-### Community 340 - "Normalized spec-record vocabulary"
-Cohesion: 0.29
-Nodes (4): Canonical row, Future ingestion seam, Normalized spec-record vocabulary, Required fields and stable types
+### Community 340 - "test_fit_params.py"
+Cohesion: 0.25
+Nodes (3): DivineEyeFitResult, _finite_score(), NonFiniteScoreError
 
 ### Community 341 - "3D Graphics Terminology For Object Sculpt Specs"
 Cohesion: 0.25
@@ -1754,9 +1758,9 @@ Nodes (8): conforming_build_passes(), ConformingSpecIsUnaffected, PluginSupplied
 Cohesion: 0.48
 Nodes (7): er(), fe(), k(), Kt(), tr(), x(), Zt()
 
-### Community 365 - "re"
-Cohesion: 0.21
-Nodes (6): collect_local_feature_keys(), find_inventory(), load(), main(), norm(), severity_for()
+### Community 365 - "emit_status"
+Cohesion: 0.33
+Nodes (4): main(), emit_status(), load_optional_spec(), _pipeline()
 
 ### Community 366 - "Character Reconstruction"
 Cohesion: 0.29
@@ -1802,14 +1806,6 @@ Nodes (19): Added — reconstruction-fidelity upgrades (folded into 1.3), _bande
 Cohesion: 0.31
 Nodes (3): block(), CalibrateEyeTest, write_rgb_png()
 
-### Community 381 - "Off-axis and placement gates"
-Cohesion: 0.29
-Nodes (7): Off-axis and placement gates, runtime/scripts/export_mesh_geometry.mjs, stage4_review/attachment_anchor.py, stage4_review/self_intersection.py, stage4_review/swept_arc_gate.py, stage4_review/turntable_gate.py, stage4_review/vertex_region_gate.py
-
-### Community 382 - "emit_status"
-Cohesion: 0.33
-Nodes (4): main(), emit_status(), load_optional_spec(), _pipeline()
-
 ### Community 383 - "UI Critique — Art Jazmines Portfolio (`src/`)"
 Cohesion: 0.20
 Nodes (9): Design Health Score, Design Specificity Verdict, Minor Observations, Overall Impression, Persona Red Flags, Priority Issues, Questions to Consider, UI Critique — Art Jazmines Portfolio (`src/`) (+1 more)
@@ -1821,6 +1817,10 @@ Nodes (6): GLB animated-character prompt, How to use it, Related, The prompt, Wh
 ### Community 388 - "Surface Topology Classification"
 Cohesion: 0.33
 Nodes (5): Common mistake, Decision tree, Surface Topology Classification, The six classes, Worked examples
+
+### Community 390 - "Off-axis and placement gates"
+Cohesion: 0.29
+Nodes (7): Off-axis and placement gates, runtime/scripts/export_mesh_geometry.mjs, stage4_review/attachment_anchor.py, stage4_review/self_intersection.py, stage4_review/swept_arc_gate.py, stage4_review/turntable_gate.py, stage4_review/vertex_region_gate.py
 
 ### Community 391 - "GLB character pipeline (opt-in)"
 Cohesion: 0.33
@@ -1878,9 +1878,9 @@ Nodes (4): Payload ownership, Pose probes before likeness, Procedural rigging co
 Cohesion: 0.33
 Nodes (6): 4. Three.js design recipe, Build order, Custom tapered ribbon-loft, Material route, When to use each Three.js primitive, v()
 
-### Community 412 - "Impeccable Documenter"
+### Community 412 - "8. DARK MODE PROTOCOL"
 Cohesion: 0.40
-Nodes (4): Impeccable Documenter, Input Contract, Output Contract, Workflow
+Nodes (5): 8.A Token Strategy (pick one, stick to it), 8.B Do Not Prescribe Specific Colors Here, 8.C Default Mode, 8.D Test in Both Modes Before Finishing, 8. DARK MODE PROTOCOL
 
 ### Community 413 - "emit_surface_module.mjs"
 Cohesion: 0.33
@@ -1942,9 +1942,9 @@ Nodes (4): Heuristics Scoring Guide, Issue Severity (P0–P3), Reference Materia
 Cohesion: 0.53
 Nodes (4): PillRect, mobileMenuContent, NavItemId, navItems
 
-### Community 435 - "8. DARK MODE PROTOCOL"
-Cohesion: 0.40
-Nodes (5): 8.A Token Strategy (pick one, stick to it), 8.B Do Not Prescribe Specific Colors Here, 8.C Default Mode, 8.D Test in Both Modes Before Finishing, 8. DARK MODE PROTOCOL
+### Community 435 - "_fit_divine_eye.py"
+Cohesion: 0.80
+Nodes (3): _approval_state(), is_approved_divine_eye_result(), normalize_history()
 
 ### Community 436 - "extract_pbr_evidence.py"
 Cohesion: 0.10
@@ -1966,23 +1966,23 @@ Nodes (3): reference_target(), ReferenceTargetEnvelopeParity, ReferenceTargetKin
 Cohesion: 0.50
 Nodes (4): 5.1 Ticker collection vs lazy geometry, 5.2 Presentation offsets vs animated pose, 5.3 Controller contract, Stage R5 — Runtime assembly
 
-### Community 443 - "_fit_divine_eye.py"
-Cohesion: 0.80
-Nodes (3): _approval_state(), is_approved_divine_eye_result(), normalize_history()
-
 ### Community 444 - "Stage R2 — Skin conditioning"
 Cohesion: 0.50
 Nodes (4): Stage R2 — Skin conditioning, The failure, What did not work, What worked — proximity weight blending
 
-### Community 449 - "Left and right"
+### Community 446 - "Left and right"
 Cohesion: 0.40
 Nodes (5): integrations/mesh3d/generate_reference_mesh.py — optional, external, Left and right, scripts/character_audit.sh, _shared/chirality.py (no CLI), stage4_review/mesh_reference_compare.py
 
-### Community 457 - "[1.2.0] - 2026-07-21"
+### Community 449 - "Impeccable Documenter"
+Cohesion: 0.40
+Nodes (4): Impeccable Documenter, Input Contract, Output Contract, Workflow
+
+### Community 456 - "[1.2.0] - 2026-07-21"
 Cohesion: 0.50
 Nodes (4): [1.2.0] - 2026-07-21, Added, Changed, Docs
 
-### Community 462 - "Command guidance"
+### Community 461 - "Command guidance"
 Cohesion: 0.50
 Nodes (3): Command guidance, No-argument routing: the context-aware menu, Workflow questions
 
@@ -1995,9 +1995,9 @@ Nodes (3): Command guidance, No-argument routing: the context-aware menu, Workfl
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `delight()` connect `delight_albedo.py` to `live.md`, `Handle `generate``?**
-  _High betweenness centrality (0.142) - this node is a cross-community bridge._
+  _High betweenness centrality (0.141) - this node is a cross-community bridge._
 - **Why does `Step 1: Parse the request` connect `live.md` to `delight_albedo.py`?**
-  _High betweenness centrality (0.139) - this node is a cross-community bridge._
+  _High betweenness centrality (0.138) - this node is a cross-community bridge._
 - **Why does `init()` connect `initGlobalBar` to `initPageChat`, `live.md`, `Init flow`, `onAnnotDown`, `live-browser.js`, `connectSSE`, `doctor.md`, `impeccable/SKILL.md`, `handleManualEditActivity`?**
   _High betweenness centrality (0.128) - this node is a cross-community bridge._
 - **Are the 74 inferred relationships involving `generate()` (e.g. with `resolve_instanced_cluster_base()` and `segments_for_spec()`) actually correct?**

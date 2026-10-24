@@ -26,13 +26,13 @@ const footerNavLinks = [
 const socialLinks: SocialLink[] = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/art.jazmines/",
+    href: "https://www.facebook.com/art.jazmines",
     iconText: "f",
     meta: "social feed",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/art-jazmines-877a574/",
+    href: "https://www.linkedin.com/in/art-jazmines-877a574",
     iconText: "in",
     meta: "career signal",
   },
@@ -44,7 +44,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/artjazvader",
+    href: "https://www.instagram.com/artjazvader/",
     iconText: "ig",
     meta: "visual feed",
   },
@@ -103,7 +103,7 @@ export default function Footer() {
     <footer
       className="Footer relative isolate flex min-h-[520px] w-full items-center overflow-hidden bg-[var(--color-bg-page)] bg-[url('/assets/images/footer-section.png')] bg-center bg-cover bg-no-repeat px-6 py-12 md:min-h-[560px] md:px-10 md:py-14"
     >
-      <div className="absolute inset-x-0 top-0 h-[211px] [background:linear-gradient(180deg,_var(--color-bg-page)_42.57%,_rgb(var(--color-bg-page-rgb)_/_0)_100%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[211px] [background:linear-gradient(180deg,_var(--color-bg-page)_42.57%,_rgb(var(--color-bg-page-rgb)_/_0)_100%)]" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_rgb(var(--color-bg-page-rgb)_/_0)_0%,_rgb(var(--color-bg-page-rgb)_/_0.48)_46%,_rgb(var(--color-bg-page-rgb)_/_0.88)_100%)]" />
 
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-10">
