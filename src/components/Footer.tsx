@@ -48,6 +48,12 @@ const socialLinks: SocialLink[] = [
     iconText: "ig",
     meta: "visual feed",
   },
+  {
+    label: "Etsy",
+    href: "https://www.etsy.com/shop/ArtistArtArtcraft",
+    iconText: "etsy",
+    meta: "art shop",
+  },
 ];
 
 function handleFooterNavClick(
