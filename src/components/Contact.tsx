@@ -115,17 +115,16 @@ export default function Contact() {
             <br />
           </span>
           <span className="text-[var(--color-text-accent)]">CHANNELS</span>
+          <span className="inline-block opacity-30 font-['Lekton',_sans-serif] text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)] -translate-y-7">
+            CONTACT FORM
+          </span>
         </ViewportHeader>
-        <p className=" left-[219px] top-[52px] w-[1232px] h-[38px] opacity-80 text-[length:18px] font-normal leading-[16px] tracking-normal text-[var(--color-text-primary)]">
-          CONTACT FORM
-        </p>
       </div>
 
       <div className="flex flex-wrap md:flex-nowrap gap-6 max-w-4xl mx-auto px-6 py-6">
-        <img
-          className="w-[185px] h-[239px] [mix-blend-mode:luminosity] pointer-events-none "
-          src="/assets/images/group.svg"
-          alt=""
+        <span
+          className="contact-fire-sprite pointer-events-none shrink-0"
+          aria-hidden="true"
         />
         <div className=" relative basis-full">
           <div className="mb-6">
@@ -307,9 +306,9 @@ export default function Contact() {
             type="submit"
             disabled={state.submitting}
             aria-busy={state.submitting}
-            className="self-end h-10 flex justify-center items-center px-6 rounded-[8px] bg-[var(--color-action-primary)] enabled:hover:bg-[var(--color-action-primary-hover)] transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-text-primary)]"
+            className="self-end h-10 flex justify-center items-center px-6 rounded-[8px] bg-[var(--color-amber-300)] enabled:hover:bg-amber-200 transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-amber-300)]"
           >
-            <span className="text-sm font-bold leading-none tracking-normal text-[rgb(var(--color-text-primary-rgb)_/_0.8)] whitespace-nowrap">
+            <span className="text-sm font-bold leading-none tracking-normal text-[var(--color-text-inverse)] whitespace-nowrap">
               {state.submitting ? "SENDING" : "SEND"}
             </span>
           </button>

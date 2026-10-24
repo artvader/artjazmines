@@ -24,9 +24,9 @@
     "semantic_hash": ""
   },
   "src/components/Contact.tsx": {
-    "mtime": 1792111415.866387,
-    "seen": 1792111444.8854966,
-    "ast_hash": "841a0007940bdfe65781cc312c586995",
+    "mtime": 1792115511.1770205,
+    "seen": 1792115528.7863615,
+    "ast_hash": "0eeea90acc2f7dd6895e2f40116c6fe8",
     "semantic_hash": ""
   },
   "src/components/Footer.tsx": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "src/components/Services.tsx": {
-    "mtime": 1792111415.8653853,
-    "seen": 1792111444.8855033,
-    "ast_hash": "b7f26599c93e09cac442a56f09937ab7",
+    "mtime": 1792115343.934938,
+    "seen": 1792115372.9804158,
+    "ast_hash": "e50d6cb2add7ff877d0f5b3c2d4c147a",
     "semantic_hash": ""
   },
   "src/components/Work.tsx": {
@@ -102,9 +102,9 @@
     "semantic_hash": "cc7ac2632501063676612a63e79ad324"
   },
   "AGENTS.md": {
-    "mtime": 1792111414.7504802,
-    "seen": 1792111444.8857894,
-    "ast_hash": "349890441be8ab82ea54bb30fb06d761",
+    "mtime": 1792114741.9686885,
+    "seen": 1792114770.3983722,
+    "ast_hash": "5fd13d12dc8c9a660413a7bf88da4126",
     "semantic_hash": ""
   },
   "HANDOFF.md": {
@@ -2829,6 +2829,30 @@
     "mtime": 1792110606.320266,
     "seen": 1792110692.9532773,
     "ast_hash": "215a54550a3bdd4825aa0cdb84460139",
+    "semantic_hash": ""
+  },
+  "public/assets/images/service-branding-identity-guidelines.jpg": {
+    "mtime": 1792115238.4099388,
+    "seen": 1792115372.9807372,
+    "ast_hash": "97ed9e8440b1c84f916b0e6a3d1f4e6c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/service-print-design-editorial-layouts.jpg": {
+    "mtime": 1792115228.6374688,
+    "seen": 1792115372.9807394,
+    "ast_hash": "92b19873b126c0b15199eecab07e6091",
+    "semantic_hash": ""
+  },
+  "public/assets/images/service-prototyping-development-board.jpg": {
+    "mtime": 1792115258.5673537,
+    "seen": 1792115372.9807408,
+    "ast_hash": "c4a66d51cdb6ae76bd33302fb0b6182b",
+    "semantic_hash": ""
+  },
+  "public/assets/images/service-web-design-holographic-interface.jpg": {
+    "mtime": 1792115193.256535,
+    "seen": 1792115372.9807425,
+    "ast_hash": "dd7f59128ab70f6fc48f3eea72545343",
     "semantic_hash": ""
   }
 }

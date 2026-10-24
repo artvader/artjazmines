@@ -24,15 +24,15 @@
     "semantic_hash": ""
   },
   "src/components/Contact.tsx": {
-    "mtime": 1792111415.866387,
-    "seen": 1792111444.8854966,
-    "ast_hash": "841a0007940bdfe65781cc312c586995",
+    "mtime": 1792116023.429039,
+    "seen": 1792134725.627741,
+    "ast_hash": "a030bfb291f3f66064c6016d8e452eba",
     "semantic_hash": ""
   },
   "src/components/Footer.tsx": {
-    "mtime": 1792111415.866387,
-    "seen": 1792111444.8854985,
-    "ast_hash": "764e69d9d1a1cd420b6407e7f908027d",
+    "mtime": 1792857970.3592708,
+    "seen": 1792858030.2189708,
+    "ast_hash": "ad9f28550604b2fe496d0e8e3c6c9927",
     "semantic_hash": ""
   },
   "src/components/Hero.tsx": {
@@ -234,15 +234,15 @@
     "semantic_hash": ""
   },
   "public/favicon.svg": {
-    "mtime": 1791003633.8738015,
-    "seen": 1791131832.2655444,
-    "ast_hash": "b91f3abe07223b44344f4ffd78cef4d1",
+    "mtime": 1792116096.6412537,
+    "seen": 1792134725.6280963,
+    "ast_hash": "2d780e30f8d78d50c7a4665c35ce1cd3",
     "semantic_hash": ""
   },
   "public/icons.svg": {
-    "mtime": 1790693063.3000877,
-    "seen": 1791044040.5994642,
-    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "mtime": 1792134701.1240997,
+    "seen": 1792134725.628098,
+    "ast_hash": "cbc86b48cde9d9a0fb41b07f2ee859b4",
     "semantic_hash": ""
   },
   "src/assets/hero.png": {
@@ -2853,6 +2853,18 @@
     "mtime": 1792115193.256535,
     "seen": 1792115372.9807425,
     "ast_hash": "dd7f59128ab70f6fc48f3eea72545343",
+    "semantic_hash": ""
+  },
+  "public/assets/images/contact-fire-sprite.svg": {
+    "mtime": 1792115720.1710744,
+    "seen": 1792115743.903488,
+    "ast_hash": "2f17020aefc7d761c9e8c9265cef3fc5",
+    "semantic_hash": ""
+  },
+  ".impeccable/critique/_tmp_src_body.md": {
+    "mtime": 1792857397.0181782,
+    "seen": 1792857741.463237,
+    "ast_hash": "3ec7097e54ba2fbeadfaf7b72d56e578",
     "semantic_hash": ""
   }
 }

@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import type { MouseEvent } from "react";
 
 type SocialLink = {
   href: string;
@@ -16,7 +17,8 @@ type SocialLink = {
 );
 
 const footerNavLinks = [
-  { label: "Work", href: "#work" },
+  { label: "About", href: "#about" },
+  { label: "Work", href: "#portfolio" },
   { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
@@ -24,29 +26,52 @@ const footerNavLinks = [
 const socialLinks: SocialLink[] = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/art.jazmines/",
     iconText: "f",
     meta: "social feed",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/art-jazmines-877a574/",
     iconText: "in",
     meta: "career signal",
   },
   {
     label: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/artvader",
     iconId: "github-icon",
     meta: "code archive",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/artjazvader",
     iconText: "ig",
     meta: "visual feed",
   },
 ];
+
+function handleFooterNavClick(
+  event: MouseEvent<HTMLAnchorElement>,
+  href: string,
+) {
+  const section = document.getElementById(href.slice(1));
+
+  if (!section) {
+    return;
+  }
+
+  event.preventDefault();
+
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  section.scrollIntoView({
+    behavior: reducedMotion ? "auto" : "smooth",
+    block: "start",
+  });
+  window.history.pushState(null, "", href);
+}
 
 function SocialIcon({ link }: { link: SocialLink }) {
   if ("iconId" in link) {
@@ -129,6 +154,7 @@ export default function Footer() {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={(event) => handleFooterNavClick(event, link.href)}
                 className="rounded-full px-1 py-2 text-sm text-white/62 transition-colors duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-action-primary)]"
               >
                 {link.label}

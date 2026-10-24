@@ -337,6 +337,28 @@ body::before {
   animation: art-figure-flicker 2.8s steps(1, end) infinite;
 }
 
+/* Dedicated ten-frame fire sprite; wordmark paths are removed from the SVG. */
+.contact-fire-sprite {
+  display: block;
+  width: 239px;
+  height: 239px;
+  background-image: url("/assets/images/contact-fire-sprite.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 2390px 239px;
+  mix-blend-mode: luminosity;
+  opacity: 0.45;
+  animation: contact-fire-play 1s steps(9, end) infinite alternate;
+}
+
+@keyframes contact-fire-play {
+  to { background-position: -2151px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-fire-sprite { animation: none; }
+}
+
 .contact-signal-wave {
   display: block;
   overflow: visible;
